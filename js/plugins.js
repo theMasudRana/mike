@@ -24,7 +24,8 @@
 // My all plugins are included here
 /* ---------------------------------
     1. Bootstrap
-    2. YourPlugin name
+    2. wow
+    3. slick
 ------------------------------------*/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
