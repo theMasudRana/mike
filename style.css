@@ -1,0 +1,414 @@
+/* -----------------------------
+Template Name: Template name
+Author: Author Name
+------------------------------- */
+
+
+/* -----------------------------------
+CSS Table of content
+--------------------------------------
+1. Template default styles
+2. Button style
+3. Header area style
+--------------------------------------*/
+
+
+/* -----------------------------
+1. Template default styles
+--------------------------------*/
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:300,400,600,700';
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #232332;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+p {
+    color: #666666;
+    margin-bottom: 15px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+hr {
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid #eee;
+    border-top: 0px;
+}
+
+label {
+    color: #626262;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background: #e74c3c;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #e74c3c;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #e74c3c;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+}
+
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+}
+
+.mark {
+    background: #4fc1f0 none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.container {
+    width: 1200px;
+}
+
+.cx-section {
+    padding: 100px 0;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+.gray-bg {
+    background: #f8f8f8;
+}
+
+/* ------------------------------
+2. Button style
+---------------------------------*/
+
+.button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    color: #232323;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 45px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.button.button-larg {
+    padding: 0 40px;
+}
+
+.button.button-small {
+    padding: 0 25px;
+}
+
+/* -----------------------------
+3. Area heading style
+-------------------------------- */
+.area-heading {
+    width: 60%;
+    margin: 0 auto 70px;
+}
+
+.area-title {
+    letter-spacing: 4px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+
+/* -----------------------------
+4. Header area style
+-------------------------------- */
+.header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: none;
+    transition: all 0.4s ease 0s;
+}
+
+.header-area::after {
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    z-index: -1;
+    width: 100%;
+    height: 90px;
+}
+
+.header-area.affix {
+    z-index: 999;
+    transition: all 0.4s ease 0s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-area.affix::after {
+    opacity: 1;
+    background: rgba(255,255,255,1);
+    transition: all 0.4s ease 0s;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    height: 90px;
+    display: table;
+    padding: 30px 0 0;
+    transition: all 0.4s ease 0s;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.header-area.affix .logo {
+    color: #000;
+}
+
+.main-menu {
+    list-style: none;
+    float: right;
+}
+
+.main-menu li {
+    float: left;
+    margin-left: 30px;
+}
+
+.main-menu li a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 30px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.main-menu li a:hover {
+    color: #e74c3c;
+}
+
+.header-area.affix .main-menu li a {
+    color: #000;
+}
+
+
+/* -----------------------------
+4. Slider area style
+-------------------------------- */
+.cx-slider-area {
+    background: rgba(0, 0, 0, 0) url("img/background/banner.jpg") no-repeat fixed center center / cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.slider-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider-message h1 {
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 3px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.cx-slider-area .scroll-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    right: 0;
+}
+
+.cx-slider-area .scroll-btn i {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.cx-slider-area .scroll-btn h4 {
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.cx-slider-area .scroll-btn h4:hover {
+    color: #e74c3c;
+}
+
+/* -----------------------------
+5. About area style
+-------------------------------- */
+.about-content h5 span {
+    color: #e74c3c;
+}
+
+.social-menu {
+    list-style: none;
+}
+
+.social-menu li {
+    float: left;
+    margin-right: 20px;
+}
+
+.social-menu li a {
+    display: block;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.social-menu li a:hover {
+    col
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
