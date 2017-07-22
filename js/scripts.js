@@ -13,11 +13,21 @@
 		time: 1000
 	});
 
-	$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
+	$(".testimonial-wrapper").slick({
+		autoplay: false,
+        speed: 300,
+        autoplayspeed: 3000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            { breakpoint: 991, settings: { slidesToShow: 1 } },
+            { breakpoint: 767, settings: { slidesToShow: 1 } },
+            { breakpoint: 479, settings: { slidesToShow: 1 } },
+        ]
+	});
 
 
     

@@ -189,29 +189,33 @@ label {
     background: #f8f8f8;
 }
 
+
+
 /* ------------------------------
 2. Button style
 ---------------------------------*/
 
 .button {
-    background: transparent none repeat scroll 0 0;
-    border: 1px solid #e5e5e5;
-    color: #232323;
+    background: #e74c3c;
+    color: #fff;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
     height: 45px;
-    letter-spacing: 1px;
-    line-height: 42px;
+    letter-spacing: 3px;
+    line-height: 45px;
     padding: 0 30px;
+    border: 1px solid transparent;
+    border-radius: 2px;
     text-transform: uppercase;
+    transition: all 0.4s ease 0s;
 }
 
 .button:hover {
-    background: #333;
-    color: #fff;
-    border: 1px solid transparent;
+    background: transparent;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
 }
 
 .button.button-larg {
@@ -222,9 +226,12 @@ label {
     padding: 0 25px;
 }
 
+
+
 /* -----------------------------
 3. Area heading style
 -------------------------------- */
+
 .area-heading {
     width: 60%;
     margin: 0 auto 100px;
@@ -238,9 +245,12 @@ label {
 }
 
 
+
+
 /* -----------------------------
 4. Header area style
 -------------------------------- */
+
 .header-area {
     position: fixed;
     top: 0;
@@ -272,7 +282,7 @@ label {
 
 .header-area.affix::after {
     opacity: 1;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
     transition: all 0.4s ease 0s;
 }
 
@@ -325,9 +335,12 @@ label {
 }
 
 
+
+
 /* -----------------------------
 4. Slider area style
 -------------------------------- */
+
 .theme-slider-area {
     background: rgba(0, 0, 0, 0) url("img/background/banner.jpg") no-repeat fixed center center / cover;
     height: 100vh;
@@ -339,7 +352,7 @@ label {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .slider-message h1 {
@@ -375,9 +388,12 @@ label {
     color: #e74c3c;
 }
 
+
+
 /* -----------------------------
 5. About area style
 -------------------------------- */
+
 .about-content h5 span {
     color: #e74c3c;
 }
@@ -401,52 +417,59 @@ label {
     color: #e74c3c;
 }
 
+
+
 /* -----------------------------
 5. Feature area style
 -------------------------------- */
+
 .feature-content p {
-	line-height: 30px;
+    line-height: 30px;
 }
+
 .learn-more {
-	position: relative;
-	margin-top: 50px;
+    position: relative;
+    margin-top: 50px;
 }
 
 .learn-more::before {
-	background: #e74c3c;
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: -10px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 50px;
-	height: 2px;
+    background: #e74c3c;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
 }
 
 .learn-more a {
-	color: #232323;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 500;
-	letter-spacing: 3px;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 .learn-more a:hover {
-	color: #e74c3c;
+    color: #e74c3c;
 }
+
+
 
 /* -----------------------------
 5. Service area style
 -------------------------------- */
+
 .service-section {
     padding: 100px 0 50px;
 }
 
 .single-service {
-	float: left;
-	width: 33.33333333%;
-	margin-bottom: 50px;
+    float: left;
+    width: 33.33333333%;
+    margin-bottom: 50px;
     transition: 0.3s;
 }
 
@@ -455,15 +478,15 @@ label {
 }
 
 .single-service i {
-	font-size: 36px;
+    font-size: 36px;
     color: #e74c3c;
 }
 
 .single-service h5 {
-	font-weight: 500;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	margin: 25px 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 25px 0;
     transition: 0.3s;
 }
 
@@ -471,9 +494,12 @@ label {
     margin: 0;
 }
 
+
+
 /* -----------------------------
 7. Counter area style
 -------------------------------- */
+
 .counter-wrapper {
     overflow: hidden;
 }
@@ -503,16 +529,23 @@ label {
     letter-spacing: 2px;
 }
 
+
+
 /* -----------------------------
 8. Testimonial area style
 -------------------------------- */
-.testimonial-section {
+
+.about-section {
     background: #000;
 }
 
-.testimonial-section .area-title,
-.testimonial-section .area-heading p {
+.about-section .area-title,
+.about-section .area-heading p {
     color: #ffffff;
+}
+
+.about-top-content {
+    margin-bottom: 100px;
 }
 
 .tab-conetnt i,
@@ -521,17 +554,511 @@ label {
     color: #ffffff;
 }
 
+.tab-conetnt i {
+    font-size: 50px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.tab-conetnt h2 {
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.tab-conetnt p {
+    color: #aaa;
+    line-height: 32px;
+}
+
+.about-bottom-content li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.about-bottom-content li a {
+    display: inline-block;
+}
+
 .tab-heading-content h6 {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.about-bottom-content li.active h6::before {
+    background: #e74c3c;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 40px;
+}
+
+.about-bottom-content li.active h6 {
     color: #ffffff;
 }
 
-.testimonial-bottom-content li {
-    display: inline;
-    margin-right: 20px;
+
+
+/* -----------------------------
+9. Call to action area style
+-------------------------------- */
+
+.call-to-action {
+    background: #000;
 }
 
-.testimonial-bottom-content li a {
+.call-to-action-content h6,
+.call-to-action-content h1,
+.call-to-action-content a {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.call-to-action-content h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #e74c3c;
+    letter-spacing: 6px;
+}
+
+.call-to-action-content h1 {
+    margin: 50px 0;
+    letter-spacing: 6px;
+}
+
+
+/* -----------------------------
+10. Team area style
+-------------------------------- */
+
+.member-thumbnail img {
+    width: 100%;
+}
+
+.single-team-member {
+    position: relative;
+}
+
+.member-thumbnail {
+    position: relative;
+}
+
+.member-thumbnail::before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.single-team-member:hover .member-thumbnail::before {
+    opacity: 1;
+}
+
+.member-content {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    z-index: 99;
+    transition: all 0.3s ease 0s;
+}
+
+.single-team-member:hover .member-content {
+    opacity: 1;
+    top: 50%;
+}
+
+.member-content h4 {
+    color: #ffffff
+}
+
+.member-content p {
+    color: #dcdcdc;
+    font-size: 13px;
+    font-style: oblique;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.member-cat li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.member-cat li a {
+    display: inline-block;
+    color: #fff;
+}
+
+.member-cat li a:hover {
+    color: #e74c3c;
+}
+
+
+/* -----------------------------
+11. Testimonial area style
+-------------------------------- */
+
+.single-testimonial blockquote {
+    border: medium none;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+}
+
+.single-testimonial p {
+    font-style: oblique;
+    font-size: 14px;
+}
+
+.single-testimonial img {
+    border-radius: 100%;
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+}
+
+.single-testimonial h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.single-testimonial h4+p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #e74c3c;
+    opacity: 0;
+}
+
+.testimonial-wrapper:hover .slick-prev::before,
+.testimonial-wrapper:hover .slick-next::before {
+    opacity: 1;
+}
+
+.slick-dots {
+    bottom: -60px;
+}
+
+.slick-dots li button::before {
+    color: #666;
+    opacity: 1;
+    font-size: 60px;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+    color: #e74c3c;
+    opacity: 1;
+}
+
+
+/* -----------------------------
+12. Blog area style
+-------------------------------- */
+
+.single-blog {
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding: 15px 18px;
+}
+
+.blog-top-content {
+    padding: 50px 30px 40px;
+}
+
+.blog-heading h3 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.blog-heading h3::before {
+    background: #e5e5e5 none repeat scroll 0 0;
+    bottom: 20px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+.blog-description h6 {
+    color: #e74c3c;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.blog-description img {
+    border-radius: 100%;
+    width: 50px;
+}
+
+.blog-footer span {
+    color: #999;
+    font-weight: 500;
+}
+
+.blog-footer span i {
+    padding-right: 5px;
+}
+
+.blog-footer .blog-date {
+    float: left;
+}
+
+.blog-footer .blog-time {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------
+13. Subscribe area style
+-------------------------------- */
+
+.subscribe-content {
+    margin: 0 auto;
+}
+
+.subscribe-heading h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    margin-top: 80px;
+}
+
+.subscribe-form .input-group {
     display: inline-block;
 }
+
+.subscribe-input {
+    display: inline-block;
+}
+
+.subscribe-input input {
+    border: 1px solid #e5e5e5;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 0 20px;
+    height: 45px;
+    text-transform: uppercase;
+    width: 450px;
+    margin-right: 5px;
+}
+
+.subscribe-input input:focus {
+    border: 1px solid #e74c3c;
+}
+
+.note {
+    width: 71%;
+}
+
+.note>p {
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+
+/* -----------------------------
+13. Conatct area style
+-------------------------------- */
+
+.contact-address-wrapper {
+    margin-top: 30px;
+}
+
+.single-conatct-address {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.conatact-icon {
+    float: left;
+    width: 50px;
+    padding-left: 2px;
+}
+
+.conatact-icon i {
+    color: #e74c3c;
+    font-size: 18px;
+    display: block;
+}
+
+.contact-information {
+    width: calc(100%-50px);
+    overflow: hidden;
+}
+
+.contact-information h6 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+.contact-information p {
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contact-information a {
+    color: #232323;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contact-information .address {
+    text-transform: uppercase;
+}
+
+.contact-wrapper .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #e5e5e5;
+    height: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-wrapper .form-control:focus {
+    border: 1px solid #e74c3c;
+}
+
+.contact-wrapper textarea.form-control {
+    min-height: 200px;
+    padding-top: 15px;
+}
+
+.contact-wrapper p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/* -----------------------------
+14. Footer area style
+-------------------------------- */
+
+.theme-footer-section {
+    background: #000;
+    padding-bottom: 30px; 
+}
+
+.page-header {
+    border-bottom: 1px solid #666;
+    margin: 80px 0 25px;
+    padding-bottom: 50px;
+}
+
+.theme-footer-section h1 {
+    color: #ffffff
+}
+
+.copy-right-info p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.copy-right-info span {
+    color: #e74c3c;
+    transition: 0.3s;
+}
+
+.copy-right-info span:hover {
+    color: #fff;
+}
+
+.footer-social-menu {
+    text-align: center;
+}
+
+.footer-social-menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.footer-social-menu li a {
+    display: inline-block;
+    color: #666;
+}
+
+.footer-social-menu li a:hover {
+    color: #e74c3c;
+}
+
+.footer-main-menu {
+    float: right;
+}
+
+.footer-main-menu li {
+    float: left;
+    margin-left: 20px;
+}
+
+.footer-main-menu li a {
+    display: block;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.footer-main-menu li a:hover {
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
 
 
