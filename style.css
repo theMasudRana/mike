@@ -17,7 +17,7 @@ CSS Table of content
 1. Template default styles
 --------------------------------*/
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700|Open+Sans:300,400,600,700';
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -32,11 +32,11 @@ body {
 }
 
 a {
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 a:focus {
@@ -68,7 +68,7 @@ h4,
 h5,
 h6 {
     color: #232332;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 3px;
@@ -123,7 +123,6 @@ p {
     color: #666;
     margin-bottom: 15px;
     line-height: 24px;
-    letter-spacing: 2px;
 }
 
 hr {
@@ -199,7 +198,7 @@ label {
     background: #e74c3c;
     color: #fff;
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     height: 45px;
@@ -238,12 +237,12 @@ label {
 }
 
 .area-title {
-    letter-spacing: 4px;
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
-
 
 
 
@@ -317,16 +316,17 @@ label {
 }
 
 .main-menu li a {
-    display: block;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 30px 0;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+  color: #ffffff;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 30px 0;
+  text-transform: uppercase;
 }
 
-.main-menu li a:hover {
+.main-menu li a:hover,
+.main-menu li.active a {
     color: #e74c3c;
 }
 
@@ -334,6 +334,9 @@ label {
     color: #000;
 }
 
+.header-area.affix .main-menu li.active a {
+    color: #e74c3c;
+}
 
 
 
@@ -387,6 +390,54 @@ label {
 .theme-slider-area .scroll-btn h4:hover {
     color: #e74c3c;
 }
+
+/* -----------------------------
+5. Breadcrumb area style
+-------------------------------- */
+.breadcrumb-section {
+    background: #000;
+    padding: 200px 0 150px;
+}
+
+.breadcrumb-title {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.breadvrumb-list {
+    float: right;
+}
+
+.breadvrumb-list li {
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.breadvrumb-list li::before {
+  color: #e74c3c;
+  content: "/";
+  left: -12px;
+  position: absolute;
+  top: 1px;
+}
+
+.breadvrumb-list li:first-child::before {
+    display: none;
+}
+
+.breadvrumb-list li a {
+    display: block;
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+
+.breadvrumb-list li a:hover {
+    color: #e74c3c;
+}
+
+
 
 
 
@@ -467,9 +518,7 @@ label {
 }
 
 .single-service {
-    float: left;
-    width: 33.33333333%;
-    margin-bottom: 50px;
+    padding: 30px;
     transition: 0.3s;
 }
 
@@ -529,7 +578,144 @@ label {
     letter-spacing: 2px;
 }
 
+/* -----------------------------
+8. Testimonial area style
+-------------------------------- */
+.portfolio-filter li {
+    display: inline;
+    margin: 0 15px;
+}
 
+.portfolio-filter li a {
+    display: inline-block;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.portfolio-filter li a:hover,
+.portfolio-filter li.active a {
+    color: #232323;
+}
+
+.portfolio-filter li a::before {
+    background: #e74c3c;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.5px;
+    width: 40px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio-filter li a:hover::before,
+.portfolio-filter li.active a::before{
+    opacity: 1;
+}
+
+.portfolio-items {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.single-portfolio-item {
+    float: left;
+    width: 33.33333333%;
+    position: relative;
+}
+
+.item-thumbnail img {
+    width: 100%;
+}
+
+.item-thumbnail {
+    position: relative;
+}
+
+.item-thumbnail::before {
+    background: rgba(0,0,0,0.7);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.single-portfolio-item:hover .item-thumbnail::before {
+    opacity: 1;
+}
+
+.item-description {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.single-portfolio-item:hover .item-description {
+    opacity: 1;
+    top: 50%;
+}
+
+.item-description > h3 {
+  margin-bottom: 25px;
+}
+
+.item-description h3 a {
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.item-description h3 a:hover {
+    color: #e74c3c;
+}
+
+.portfolio-cat li {
+  display: inline;
+  margin: 5px;
+  position: relative;
+}
+
+.portfolio-cat li::before {
+  color: #e74c3c;
+  content: "/";
+  left: -8px;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.portfolio-cat li:first-child::before {
+    display: none;
+}
+
+.portfolio-cat li a {
+  color: #e74c3c;
+  display: inline-block;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 /* -----------------------------
 8. Testimonial area style
@@ -689,11 +875,12 @@ label {
 }
 
 .member-content p {
-    color: #dcdcdc;
-    font-size: 13px;
-    font-style: oblique;
-    font-weight: 600;
-    text-transform: uppercase;
+  color: #dcdcdc;
+  font-size: 12px;
+  font-style: oblique;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .member-cat li {
@@ -895,7 +1082,7 @@ label {
 }
 
 .note {
-    width: 71%;
+    width: 60%;
 }
 
 .note>p {
@@ -903,6 +1090,7 @@ label {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 11px;
+    margin-bottom: 0;
 }
 
 
@@ -915,7 +1103,6 @@ label {
 }
 
 .single-conatct-address {
-    overflow: hidden;
     margin-bottom: 30px;
 }
 
@@ -1055,7 +1242,39 @@ label {
 }
 
 
+.to-top-btn {
+    background: #e74c3c none repeat scroll 0 0;
+    border-radius: 2px;
+    bottom: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    height: 30px;
+    line-height: 28px;
+    opacity: 0;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    transform: translateY(20px);
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 30px;
+}
 
+.to-top-btn:focus {
+    color: #fff;
+}
+
+.to-top-btn.to-top-show {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    z-index: 999999;
+}
+
+.to-top-btn.to-top-show:hover {
+    color: #fff;
+    opacity: .75;
+}
 
 
 

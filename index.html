@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
@@ -22,24 +22,38 @@
         <header class="header-area" id="header-area" data-spy="affix" data-offset-top="280" data-smooth-scroll="true">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-3">
                         <div class="logo-wrapper">
                             <a class="logo" href="index.html"><i class=""></i>mike</a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-9 hidden-sm hidden-xs">
                         <div class="menu-area">
                             <nav class="theme-menu">
                                 <ul class="main-menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">service</a></li>
-                                    <li><a href="#">clients</a></li>
-                                    <li><a href="#">contact</a></li>
+                                    <li class="active"><a href="#home">Home</a></li>
+                                    <li><a href="#service">services</a></li>
+                                    <li><a href="#about">about us</a></li>
+                                    <li><a href="#portfolio">portfolio</a></li>
+                                    <li><a href="#team">team</a></li>
+                                    <li><a href="#blog">blog</a></li>
+                                    <li><a href="#contact">contact</a></li>
                                 </ul>
                             </nav>
                         </div>
+                    </div>
+                    <div class="mobile-menu-area hidden-md hidden-lg">
+                        <nav class="mobile-menu">
+                            <ul class="mobile-menu-nav">
+                                <li class="active"><a href="#home">Home</a></li>
+                                <li><a href="#service">services</a></li>
+                                <li><a href="#about">about us</a></li>
+                                <li><a href="#portfolio">portfolio</a></li>
+                                <li><a href="#team">team</a></li>
+                                <li><a href="#blog">blog</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -51,7 +65,7 @@
                 <h1>mike sun</h1>
             </div>
             <div class="scroll-btn">
-                <a href="#about">
+                <a href="#feature">
                     <i class="bi bi-mouse"></i>
                     <h4>scroll down</h4>
                 </a>
@@ -60,50 +74,8 @@
         <!-- Slider area end -->
         <!-- Page content area start -->
         <section class="content">
-            <!-- theme about section start -->
-            <!-- <div class="theme-section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="area-heading text-center">
-                                <h2 class="area-title">about me</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="about-content">
-                                <h5>hello, i am <span>mike sun</span>. I am creative designer & developer and hardworker.</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, velit officiis voluptates officia aliquam optio.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates reprehenderit quae? Alias vitae ab unde pariatur accusamus quidem optio quos autem quasi? Tenetur, natus!</p>
-                                <ul class="social-menu">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="progress-bar-area">
-                                <div class="single-skill-bar">
-                                    <p>design</p>
-                                    <div class="progress">
-                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" role="progressbar" aria-valuenow="92" aria-valuemin="0" ariavaluemax="100" style="width: 92%">
-                                            <span>92%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-            </div> -->
-            <!-- theme about section end -->
             <!-- theme feature section start -->
-            <div class="theme-section">
+            <div class="theme-section" id="feature">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -138,7 +110,7 @@
             </div>
             <!-- theme feature section end -->
             <!-- theme service section start -->
-            <div class="service-section gray-bg">
+            <div class="service-section gray-bg" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -149,32 +121,42 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="0.2s">
                                 <i class="bi bi-laptop"></i>
                                 <h5>web design</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam modi beatae, aut quas mollitia.</p>
                             </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="0.4s">
                                 <i class="bi bi-bulb"></i>
                                 <h5>graphic design</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam modi beatae, aut quas mollitia.</p>
                             </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="0.6s">
                                 <i class="bi bi-sand-watch"></i>
                                 <h5>fast & smmoth</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam modi beatae, aut quas mollitia.</p>
                             </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="0.8s">
                                 <i class="bi bi-layer"></i>
                                 <h5>brand identify</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam modi beatae, aut quas mollitia.</p>
                             </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="1s">
                                 <i class="bi bi-pin"></i>
                                 <h5>free updates</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam modi beatae, aut quas mollitia.</p>
                             </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
                             <div class="single-service text-center wow fadeIn" data-wow-delay="1.2s">
                                 <i class="bi bi-headphone"></i>
                                 <h5>24/7 free support</h5>
@@ -197,26 +179,28 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="counter-wrapper">
-                            <div class="single-counter text-center">
-                                <i class="bi bi-drawer"></i>
-                                <span class="counter">565</span>
-                                <h6>project submit</h6>
-                            </div>
-                            <div class="single-counter text-center">
-                                <i class="bi bi-drag-inside"></i>
-                                <span class="counter">367</span>
-                                <h6>new idea</h6>
-                            </div>
-                            <div class="single-counter text-center">
-                                <i class="bi bi-hand-watch"></i>
-                                <span class="counter">1337</span>
-                                <h6>working time</h6>
-                            </div>
-                            <div class="single-counter text-center">
-                                <i class="bi bi-group"></i>
-                                <span class="counter">432</span>
-                                <h6>honourable clients</h6>
+                        <div class="col-md-12">
+                            <div class="counter-wrapper">
+                                <div class="single-counter text-center">
+                                    <i class="bi bi-drawer"></i>
+                                    <span class="counter">565</span>
+                                    <h6>project submit</h6>
+                                </div>
+                                <div class="single-counter text-center">
+                                    <i class="bi bi-drag-inside"></i>
+                                    <span class="counter">367</span>
+                                    <h6>new idea</h6>
+                                </div>
+                                <div class="single-counter text-center">
+                                    <i class="bi bi-hand-watch"></i>
+                                    <span class="counter">1337</span>
+                                    <h6>working time</h6>
+                                </div>
+                                <div class="single-counter text-center">
+                                    <i class="bi bi-group"></i>
+                                    <span class="counter">432</span>
+                                    <h6>honourable clients</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -224,7 +208,7 @@
             </div>
             <!-- theme counter section end -->
             <!-- theme about section start -->
-            <div class="theme-section about-section">
+            <div class="theme-section about-section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-8 col-md-offset-2">
@@ -255,7 +239,7 @@
                                     </div>
                                 </div>
                                 <div class="about-bottom-content">
-                                    <div  data-example-id="togglable-tabs">
+                                    <div data-example-id="togglable-tabs">
                                         <ul class="tab-menu" role="tablist">
                                             <li role="presentation" class="active">
                                                 <a href="#listener" id="listener-tab" role="tab" data-toggle="tab" aria-controls="listener" aria-expanded="true">
@@ -288,7 +272,162 @@
             </div>
             <!-- theme about section end -->
             <!-- theme portfolio section start -->
-            <div class="theme-section"></div>
+            <div class="theme-section portfolio-section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="area-heading text-center">
+                                <h2 class="area-title">our recent works</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfoliofilter-menu text-center">
+                                <ul class="portfolio-filter">
+                                    <li class="active"><a href="#" data-filter="*">All</a></li>
+                                    <li><a href="#" data-filter=".cat1">travel</a></li>
+                                    <li><a href="#" data-filter=".cat2">drama</a></li>
+                                    <li><a href="#" data-filter=".cat3">film</a></li>
+                                    <li><a href="#" data-filter=".cat4">cooking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items">
+                    <div class="single-portfolio-item cat1 cat3">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/1.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/1.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">film</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item cat2 cat4">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/2.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/2.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">drama</a></li>
+                                    <li><a href="#">cooking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item cat1 cat2">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/3.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/3.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">drama</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item cat3 cat4">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/4.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/4.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">film</a></li>
+                                    <li><a href="#">cooking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item cat1 cat3">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/5.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/5.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">film</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item cat2 cat4">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/6.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/6.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">drama</a></li>
+                                    <li><a href="#">cooking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item hidden cat1 cat3">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/1.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/1.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">film</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item hidden cat1 cat3">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/6.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/6.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">film</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio-item hidden hidden-sm cat1 cat3">
+                        <div class="item-content">
+                            <div class="item-thumbnail">
+                                <img src="img/portfolio/3.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3><a href="img/portfolio/3.jpg" class="venobox">portfolio item title</a></h3>
+                                <ul class="portfolio-cat">
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">film</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learn-more load-more text-center">
+                    <a href="#" class="load-more-btn">view more</a>
+                </div>
+            </div>
             <!-- theme portfolio section end -->
             <!-- theme call to action section start -->
             <div class="theme-section call-to-action">
@@ -306,7 +445,7 @@
             </div>
             <!-- theme call to action section end -->
             <!-- theme team section start -->
-            <div class="theme-section team-section">
+            <div class="theme-section team-section" id="team">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -324,7 +463,7 @@
                                 </div>
                                 <div class="member-content text-center">
                                     <h4>eva turner</h4>
-                                    <p>CEO</p>
+                                    <p>CEO google</p>
                                     <ul class="member-cat">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -342,7 +481,7 @@
                                 </div>
                                 <div class="member-content text-center">
                                     <h4>john doe</h4>
-                                    <p>CEO</p>
+                                    <p>CEO youtube</p>
                                     <ul class="member-cat">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -360,7 +499,7 @@
                                 </div>
                                 <div class="member-content text-center">
                                     <h4>adam smith</h4>
-                                    <p>CEO</p>
+                                    <p>CEO microsoft</p>
                                     <ul class="member-cat">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -426,7 +565,7 @@
             </div>
             <!-- theme testimonial section end -->
             <!-- theme blog section start -->
-            <div class="theme-section">
+            <div class="theme-section" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -437,56 +576,54 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-4">
-                                <div class="single-blog text-center">
-                                    <div class="blog-top-content">
-                                        <div class="blog-heading">
-                                            <h3>what happens in the brain</h3>
-                                        </div>
-                                        <div class="blog-description">
-                                            <h6>development, mobile</h6>
-                                            <img src="img/avatar/1.jpg" alt="">
-                                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-blog text-center">
+                                <div class="blog-top-content">
+                                    <div class="blog-heading">
+                                        <h3>what happens in the brain</h3>
                                     </div>
-                                    <div class="blog-footer">
-                                        <span class="blog-date"><i class="bi bi-calendar"></i> 20 July</span>
-                                        <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
+                                    <div class="blog-description">
+                                        <h6>development, mobile</h6>
+                                        <img src="img/avatar/1.jpg" alt="">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-blog text-center">
-                                    <div class="blog-top-content">
-                                        <div class="blog-heading">
-                                            <h3>what goes around comes around</h3>
-                                        </div>
-                                        <div class="blog-description">
-                                            <h6>ui ux</h6>
-                                            <img src="img/avatar/2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="blog-footer">
-                                        <span class="blog-date"><i class="bi bi-calendar"></i> 22 July</span>
-                                        <span class="blog-time"><i class="bi bi-hand-watch"></i> 03 min read</span>
-                                    </div>
+                                <div class="blog-footer">
+                                    <span class="blog-date"><i class="bi bi-calendar"></i> 20 July</span>
+                                    <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="single-blog text-center">
-                                    <div class="blog-top-content">
-                                        <div class="blog-heading">
-                                            <h3>the things we lost in the fire</h3>
-                                        </div>
-                                        <div class="blog-description">
-                                            <h6>development, mobile</h6>
-                                            <img src="img/avatar/3.jpg" alt="">
-                                        </div>
-                                        </div>
-                                    <div class="blog-footer">
-                                        <span class="blog-date"><i class="bi bi-calendar"></i> 24 July</span>
-                                        <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-blog text-center">
+                                <div class="blog-top-content">
+                                    <div class="blog-heading">
+                                        <h3>what goes around comes around</h3>
                                     </div>
+                                    <div class="blog-description">
+                                        <h6>ui ux</h6>
+                                        <img src="img/avatar/2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <span class="blog-date"><i class="bi bi-calendar"></i> 22 July</span>
+                                    <span class="blog-time"><i class="bi bi-hand-watch"></i> 03 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hidden-sm">
+                            <div class="single-blog text-center">
+                                <div class="blog-top-content">
+                                    <div class="blog-heading">
+                                        <h3>the things we lost in the fire</h3>
+                                    </div>
+                                    <div class="blog-description">
+                                        <h6>development, mobile</h6>
+                                        <img src="img/avatar/3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <span class="blog-date"><i class="bi bi-calendar"></i> 24 July</span>
+                                    <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
                                 </div>
                             </div>
                         </div>
@@ -519,11 +656,8 @@
                                             <div class="subscribe-input">
                                                 <button type="submit" class="button email-submit-btn" placeholder="enter your email...">lets talk</button>
                                             </div>
-
                                         </div>
-
                                     </form>
-
                                 </div>
                                 <div class="note">
                                     <p>we do not share your information with anyone.</p>
@@ -535,7 +669,7 @@
             </div>
             <!-- theme subscribe section end -->
             <!-- theme conatct section start -->
-            <div class="theme-section">
+            <div class="theme-section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -546,11 +680,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4">
                             <div class="contact-address-wrapper">
                                 <div class="single-conatct-address">
                                     <div class="conatact-icon">
-                                        <i class="bi bi-phone"c></i>
+                                        <i class="bi bi-phone" c></i>
                                     </div>
                                     <div class="contact-information">
                                         <h6>call us at</h6>
@@ -559,7 +693,7 @@
                                 </div>
                                 <div class="single-conatct-address">
                                     <div class="conatact-icon">
-                                        <i class="bi bi-envelop"c></i>
+                                        <i class="bi bi-envelop" c></i>
                                     </div>
                                     <div class="contact-information">
                                         <h6>email us at</h6>
@@ -568,7 +702,7 @@
                                 </div>
                                 <div class="single-conatct-address">
                                     <div class="conatact-icon">
-                                        <i class="bi bi-map-pointer"c></i>
+                                        <i class="bi bi-map-pointer" c></i>
                                     </div>
                                     <div class="contact-information">
                                         <h6>visit us at</h6>
@@ -577,7 +711,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-8">
+                        <div class="col-md-8">
                             <div class="contact-wrapper">
                                 <form id="mike-contact-form" action="php/mail.php" method="POST">
                                     <div class="form-group row">
@@ -630,13 +764,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5">
+                    <div class="col-md-5">
                         <div class="copy-right-info">
                             <p>All copyright &copy; reserved by
                                 <a href="http://themedaddy.xyz"> <span>themedaddy</span> </a>2017</p>
                         </div>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-md-7">
                         <div class="footer-menu">
                             <ul class="footer-main-menu">
                                 <li><a href="#">news</a></li>
