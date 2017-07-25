@@ -15,48 +15,44 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Main wrapper start -->
     <div class="wrapper">
         <!-- Header area start -->
-        <header class="header-area" id="header-area" data-spy="affix" data-offset-top="150" data-smooth-scroll="true">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-3">
-                        <div class="logo-wrapper">
-                            <a class="logo" href="index.html"><i class=""></i>mike</a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-9 hidden-sm hidden-xs">
-                        <div class="menu-area">
-                            <nav class="theme-menu">
-                                <ul class="main-menu">
-                                    <li class="active"><a href="#home">Home</a></li>
-                                    <li><a href="#service">services</a></li>
-                                    <li><a href="#about">about us</a></li>
-                                    <li><a href="#portfolio">portfolio</a></li>
-                                    <li><a href="#team">team</a></li>
-                                    <li><a href="#blog">blog</a></li>
-                                    <li><a href="#contact">contact</a></li>
+        <header class="header-area">
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand page-scroll" href="index.html">mike</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav navbar-right hover-style-one">
+                                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                                    <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                                    <li><a class="page-scroll" href="#page-top">Home</a></li>
+                                    <li><a class="page-scroll" href="index.html#service">service</a></li>
+                                    <li><a class="page-scroll" href="index.html#about">About</a></li>
+                                    <li><a class="page-scroll" href="index.html#team">Team</a></li>
+                                    <li><a class="page-scroll" href="index.html#portfolio">portfolio</a></li>
+                                    <li><a class="page-scroll" href="index.html#blog">blog</a></li>
+                                    <li><a class="page-scroll" href="index.html#contact">contact</a></li>
                                 </ul>
-                            </nav>
+                            </div>
+                            <!-- /.navbar-collapse -->
                         </div>
-                    </div>
-                    <div class="mobile-menu-area hidden-md hidden-lg">
-                        <nav class="mobile-menu">
-                            <ul class="mobile-menu-nav">
-                                <li class="active"><a href="#home">Home</a></li>
-                                <li><a href="#service">services</a></li>
-                                <li><a href="#about">about us</a></li>
-                                <li><a href="#portfolio">portfolio</a></li>
-                                <li><a href="#team">team</a></li>
-                                <li><a href="#blog">blog</a></li>
-                                <li><a href="#contact">contact</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
-            </div>
+                <!-- /.container -->
+            </nav>
         </header>
         <!-- Header area end -->
         <!-- Breadcrumb area start -->
@@ -70,7 +66,7 @@
                         <div class="breadcrumb-menu">
                             <ul class="breadvrumb-list">
                                 <li><a href="index.html">home</a></li>
-                                <li><a href="#">single blog post title</a></li>
+                                <li>single blog post title</li>
                             </ul>
                         </div>
                     </div>
@@ -80,6 +76,193 @@
         <!-- Breadcrumb area end -->
         <!-- Page content area start -->
         <section class="content">
+            <!-- theme blog post section start -->
+            <div class="theme-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <article class="blog-post">
+                                <div class="blog-post-wrapper">
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog/1.jpg" alt="">
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog/2.jpg" alt="">
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog/3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="post-description">
+                                    <h3>what happens in the brain</h3>
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="bi bi-user-ID"></i>admin</a></li>
+                                        <li><a href="#"><i class="bi bi-calendar"></i>22 july</a></li>
+                                        <li><a href="#"><i class="bi bi-hand-watch"></i>05 min read</a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolorum. Hic ratione commodi saepe modi vel tempore dolores corrupti vitae, nisi iure dolorem harum id doloribus voluptas rerum autem repudiandae, officia sit consequatur minima incidunt blanditiis soluta. Vitae odio vel nulla, ea sint, incidunt ad, animi ducimus aliquid amet harum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempora reprehenderit labore esse, officia quod.</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="post-description-inner">
+                                                <img src="img/blog/1.jpg" alt="">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ducimus eaque, maxime accusamus a nemo praesentium officiis voluptatibus consectetur modi nostrum ipsa nihil corporis molestias, nesciunt excepturi et provident ut!</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="post-description-inner">
+                                                <img src="img/blog/2.jpg" alt="">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ducimus eaque, maxime accusamus a nemo praesentium officiis voluptatibus consectetur modi nostrum ipsa nihil corporis molestias, nesciunt excepturi et provident ut!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eos magni, quia eveniet sequi assumenda officia eligendi rerum ad similique rem expedita laborum vitae aliquid, fugiat quod, harum perspiciatis asperiores adipisci eaque doloribus ipsum, error quasi cumque? Ipsam ducimus, magnam!</p>
+                                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, corporis.</strong></p>
+                                </div>
+                            </article>
+                            <div class="blog-comment-section">
+                                <h4 class="comment-title">have 4 comments</h4>
+                                <ul class="media-list">
+                                    <li class="media">
+                                        <div class="media-thubnail">
+                                            <img src="img/avatar/1.jpg" alt="">
+                                        </div>
+                                        <div class="media-content">
+                                            <h5><a href="#">tom cruise</a></h5>
+                                            <p>
+                                                <span>22 july, at 12:00 pm</span>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facilis similique omnis harum minus a dicta, voluptatem ducimus excepturi placeat.</p>
+                                            <a href="#" class="reply-icon"><i class="bi bi-reply"></i>reply</a>
+                                        </div>
+                                    </li>
+                                    <li class="media-reply">
+                                        <div class="media-thubnail">
+                                            <img src="img/avatar/2.jpg" alt="">
+                                        </div>
+                                        <div class="media-content">
+                                            <h5><a href="#">Angelina Jolie</a></h5>
+                                            <p>
+                                                <span>22 july, at 12:05 pm</span>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facilis similique omnis harum minus a dicta, voluptatem ducimus excepturi placeat.</p>
+                                            <a href="#" class="reply-icon"><i class="bi bi-reply"></i>reply</a>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-thubnail">
+                                            <img src="img/avatar/3.jpg" alt="">
+                                        </div>
+                                        <div class="media-content">
+                                            <h5><a href="#">Leonardo DiCaprio</a></h5>
+                                            <p>
+                                                <span>22 july, at 12:10 pm</span>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facilis similique omnis harum minus a dicta, voluptatem ducimus excepturi placeat.</p>
+                                            <a href="#" class="reply-icon"><i class="bi bi-reply"></i>reply</a>
+                                        </div>
+                                    </li>
+                                    <li class="media-reply">
+                                        <div class="media-thubnail">
+                                            <img src="img/avatar/2.jpg" alt="">
+                                        </div>
+                                        <div class="media-content">
+                                            <h5><a href="#">Jennifer Lopez</a></h5>
+                                            <p>
+                                                <span>22 july, at 12:15 pm</span>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facilis similique omnis harum minus a dicta, voluptatem ducimus excepturi placeat.</p>
+                                            <a href="#" class="reply-icon"><i class="bi bi-reply"></i>reply</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h4 class="comment-title">leave your comment</h4>
+                                <div class="comment-form">
+                                    <form action="" id="mike-comment-form">
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" placeholder="name" required>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="email" class="form-control" placeholder="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="3" placeholder="your message"></textarea>
+                                        </div>
+                                        <button type="submit" class="button">post comment</button>
+                                        <p class="form-send-comment"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-5">
+                            <aside class="single-widget">
+                                <div class="search-widget">
+                                    <form action="#" class="search-form">
+                                        <input type="text" placeholder="search.....">
+                                        <button type="submit"><i class="bi bi-search"></i></button>
+                                    </form>
+                                </div>
+                            </aside>
+                            <aside class="single-widget">
+                                <h4 class="widget-title">tags</h4>
+                                <div class="tags">
+                                    <a href="#">travel</a>
+                                    <a href="#">drama</a>
+                                    <a href="#">film</a>
+                                    <a href="#">cooking</a>
+                                    <a href="#">design</a>
+                                </div>
+                            </aside>
+                            <aside class="single-widget category-widget">
+                                <h4 class="widget-title">categories</h4>
+                                <div class="categories">
+                                    <ul class="post-category-list">
+                                        <li><a href="#">travel <span>[6]</span></a></li>
+                                        <li><a href="#">drama <span>[4]</span></a></li>
+                                        <li><a href="#">film <span>[7]</span></a></li>
+                                        <li><a href="#">cooking <span>[5]</span></a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="single-widget">
+                                <h4 class="widget-title">recent posts</h4>
+                                <div class="recent-post-widget">
+                                    <div class="single-post-widget">
+                                        <div class="widget-image">
+                                            <a href="#"><img src="img/blog/widget/1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="post-widget-content">
+                                            <h4><a href="#">simple post title</a></h4>
+                                            <p>20 july, 5 min read</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-widget">
+                                        <div class="widget-image">
+                                            <a href="#"><img src="img/blog/widget/2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="post-widget-content">
+                                            <h4><a href="#">simple post title</a></h4>
+                                            <p>22 july, 3 min read</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-widget">
+                                        <div class="widget-image">
+                                            <a href="#"><img src="img/blog/widget/3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="post-widget-content">
+                                            <h4><a href="#">simple post title</a></h4>
+                                            <p>24 july, 5 min read</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- theme blog post section end -->
             <!-- theme subscribe section start -->
             <div class="theme-section gray-bg">
                 <div class="container">
@@ -98,14 +281,8 @@
                                             <div class="subscribe-input">
                                                 <button type="submit" class="button email-submit-btn" placeholder="enter your email...">lets talk</button>
                                             </div>
-
                                         </div>
-
                                     </form>
-
-                                </div>
-                                <div class="note">
-                                    <p>we do not share your information with anyone.</p>
                                 </div>
                             </div>
                         </div>
@@ -113,53 +290,6 @@
                 </div>
             </div>
             <!-- theme subscribe section end -->
-            <!-- theme conatct section start -->
-            <div class="theme-section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="area-heading text-center">
-                                <h2 class="area-title">say hello!</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="contact-address-wrapper">
-                                <div class="single-conatct-address">
-                                    <div class="conatact-icon">
-                                        <i class="bi bi-phone"c></i>
-                                    </div>
-                                    <div class="contact-information">
-                                        <h6>call us at</h6>
-                                        <p>+8 231 312 311-9</p>
-                                    </div>
-                                </div>
-                                <div class="single-conatct-address">
-                                    <div class="conatact-icon">
-                                        <i class="bi bi-envelop"c></i>
-                                    </div>
-                                    <div class="contact-information">
-                                        <h6>email us at</h6>
-                                        <a href="#">envato@themedaddy.com</a>
-                                    </div>
-                                </div>
-                                <div class="single-conatct-address">
-                                    <div class="conatact-icon">
-                                        <i class="bi bi-map-pointer"c></i>
-                                    </div>
-                                    <div class="contact-information">
-                                        <h6>visit us at</h6>
-                                        <p class="address">some street, new york, USA</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- theme conatct section end -->
         </section>
         <!-- Page content area end -->
         <!-- Footer section start -->
@@ -191,9 +321,9 @@
                     <div class="col-md-7">
                         <div class="footer-menu">
                             <ul class="footer-main-menu">
-                                <li><a href="#">news</a></li>
-                                <li><a href="#">&copy;hugenic</a></li>
-                                <li><a href="#">RSS</a></li>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">contact</a></li>
                                 <li><a href="#">your privacy</a></li>
                                 <li><a href="#">contact & directions</a></li>
                             </ul>

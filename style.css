@@ -17,7 +17,7 @@ CSS Table of content
 1. Template default styles
 --------------------------------*/
 
-@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700|Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Open+Sans:300,400,600,700';
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -68,12 +68,12 @@ h4,
 h5,
 h6 {
     color: #232332;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-top: 0;
-    text-transform: capitalize;
+    text-transform: unset;
 }
 
 h1 a,
@@ -116,7 +116,7 @@ ul {
 }
 
 li {
-    list-style: none
+    list-style: none;
 }
 
 p {
@@ -140,19 +140,19 @@ label {
 }
 
 *::-moz-selection {
-    background: #e74c3c;
+    background: #D9BF77;
     color: #fff;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #e74c3c;
+    background: #D9BF77;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #e74c3c;
+    background: #D9BF77;
     color: #fff;
     text-shadow: none;
 }
@@ -190,15 +190,17 @@ label {
 
 
 
+
+
 /* ------------------------------
 2. Button style
 ---------------------------------*/
 
 .button {
-    background: #e74c3c;
+    background: #D9BF77;
     color: #fff;
     display: inline-block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 400;
     height: 45px;
@@ -213,8 +215,8 @@ label {
 
 .button:hover {
     background: transparent;
-    color: #e74c3c;
-    border: 1px solid #e74c3c;
+    color: #D9BF77;
+    border: 1px solid #D9BF77;
 }
 
 .button.button-larg {
@@ -227,22 +229,48 @@ label {
 
 
 
+
+
 /* -----------------------------
 3. Area heading style
 -------------------------------- */
 
 .area-heading {
+    margin: 0 auto 80px;
     width: 60%;
-    margin: 0 auto 100px;
 }
 
 .area-title {
-  font-size: 25px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 15px;
 }
+
+.divider i {
+    color: #d9bf77;
+    font-size: 35px;
+    position: relative;
+}
+
+.divider {
+    display: inline-block;
+    position: relative;
+}
+
+.divider::before {
+    background: #d9bf77 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    right: 0;
+    top: 48%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 120px;
+}
+
+
 
 
 
@@ -250,92 +278,98 @@ label {
 4. Header area style
 -------------------------------- */
 
-.header-area {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-    box-shadow: none;
-    transition: all 0.4s ease 0s;
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
 }
 
-
-.header-area::after {
-    content: "";
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.4s ease 0s;
-    z-index: -1;
-    width: 100%;
-    height: 90px;
-}
-
-.header-area.affix {
-    z-index: 999;
-    transition: all 0.4s ease 0s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.header-area.affix::after {
-    opacity: 1;
-    background: rgba(255, 255, 255, 1);
-    transition: all 0.4s ease 0s;
-}
-
-.logo {
+.header-area .navbar-brand {
     color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
     display: inline-block;
-    height: 90px;
-    display: table;
-    padding: 30px 0 0;
-    transition: all 0.4s ease 0s;
-    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-transform: lowercase;
 }
 
-.logo:hover {
-    color: #fff;
+
+.header-area .top-nav-collapse .navbar-brand {
+    color: #232323;
 }
 
-.header-area.affix .logo {
-    color: #000;
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background: transparent;
 }
 
-.main-menu {
-    list-style: none;
-    float: right;
-}
-
-.main-menu li {
-    float: left;
+.header-area .navbar-nav>li {
     margin-left: 30px;
+    padding: 20px 0;
 }
 
-.main-menu li a {
-  color: #ffffff;
-  display: block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  padding: 30px 0;
-  text-transform: uppercase;
+.header-area .navbar-nav>li>a {
+    padding: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
-.main-menu li a:hover,
-.main-menu li.active a {
-    color: #e74c3c;
+.header-area .navbar-nav>li.active>a,
+.header-area .navbar-nav>li>a:hover {
+    color: #D9BF77;
 }
 
-.header-area.affix .main-menu li a {
-    color: #000;
+.header-area .navbar {
+    padding: 10px 0;
+    transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+    margin-bottom: 0;
 }
 
-.header-area.affix .main-menu li.active a {
-    color: #e74c3c;
+.header-area .top-nav-collapse {
+    background: #ffffff none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+    padding: 3px 0;
+}
+
+.header-area .top-nav-collapse .navbar-nav>li>a {
+    color: #232323;
+}
+
+.header-area .top-nav-collapse .hover-style-one li:hover>a,
+.header-area .top-nav-collapse .hover-style-one li.active>a {
+    color: #D9BF77;
+}
+
+.header-area .navbar-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    float: right;
+    margin: 13px 0;
+    padding: 9px;
+    position: relative;
+}
+
+.header-area .navbar-toggle .icon-bar {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    display: block;
+    height: 1px;
+    width: 20px;
+}
+
+.header-area .top-nav-collapse .navbar-toggle .icon-bar {
+    background: #999;
+}
+
+.header-area .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 5px;
 }
 
 
@@ -344,21 +378,27 @@ label {
 4. Slider area style
 -------------------------------- */
 
-.theme-slider-area {
-    background: rgba(0, 0, 0, 0) url("img/background/banner.jpg") no-repeat fixed center center / cover;
+.single-slider {
     height: 100vh;
-    position: relative;
-    width: 100%;
 }
 
-.slider-message {
+.slider-1 {
+    background: rgba(0, 0, 0, 0) url("img/background/banner.jpg") no-repeat fixed center center / cover;
+}
+
+.slider-2 {
+    background: rgba(0, 0, 0, 0) url("img/background/banner-2.jpg") no-repeat fixed center center / cover;
+}
+
+.slider-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
 }
 
-.slider-message h1 {
+.slider-content h1 {
     color: #ffffff;
     font-size: 48px;
     letter-spacing: 4px;
@@ -366,34 +406,81 @@ label {
     text-transform: uppercase;
 }
 
-.theme-slider-area .scroll-btn {
+.slider-wrapper .slick-dots {
+    bottom: 7px;
+}
+.slider-wrapper .slick-dots li button::before {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.slider-area .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
+
+
+.scroll-btn {
     position: absolute;
     bottom: 30px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 55px;
+    min-width: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: normal;
+    z-index: 99;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.scroll-btn-wrapper {
+    height: 55px;
+    position: relative;
+}
+
+.scroll-ball {
+    animation: 3s ease 0s normal none infinite running mike-slider-anim;
+    background: #fff none repeat scroll 0 0;
+    border-radius: 100%;
+    display: inline-block;
+    height: 7px;
+    left: 50%;
+    position: absolute;
     text-align: center;
-    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    transform: translateX(-50%);
+    width: 7px;
 }
 
-.theme-slider-area .scroll-btn i {
-    font-size: 40px;
-    color: #ffffff;
+
+/* Standard syntax */
+
+@keyframes mike-slider-anim {
+    0% {
+        top: 10px;
+        opacity: 1;
+    }
+    50% {
+        top: 40px;
+        opacity: 0;
+    }
+    100% {
+        top: 10px;
+        opacity: 0;
+    }
 }
 
-.theme-slider-area .scroll-btn h4 {
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-top: 10px;
-    transition: 0.3s;
-    font-size: 12px;
-}
-
-.theme-slider-area .scroll-btn h4:hover {
-    color: #e74c3c;
-}
 
 /* -----------------------------
 5. Breadcrumb area style
 -------------------------------- */
+
 .breadcrumb-section {
     background: #000;
     padding: 200px 0 150px;
@@ -415,28 +502,30 @@ label {
 }
 
 .breadvrumb-list li::before {
-  color: #e74c3c;
-  content: "/";
-  left: -12px;
-  position: absolute;
-  top: 1px;
+    color: #D9BF77;
+    content: "/";
+    left: -12px;
+    position: absolute;
+    top: 1px;
 }
 
 .breadvrumb-list li:first-child::before {
     display: none;
 }
 
+.breadvrumb-list li {
+    color: #ffffff;
+}
+
 .breadvrumb-list li a {
     display: block;
     color: #ffffff;
     text-transform: capitalize;
-
 }
 
 .breadvrumb-list li a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
-
 
 
 
@@ -446,7 +535,7 @@ label {
 -------------------------------- */
 
 .about-content h5 span {
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 .social-menu {
@@ -465,8 +554,10 @@ label {
 }
 
 .social-menu li a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
+
+
 
 
 
@@ -484,7 +575,7 @@ label {
 }
 
 .learn-more::before {
-    background: #e74c3c;
+    background: #D9BF77;
     content: "";
     display: block;
     position: absolute;
@@ -497,15 +588,17 @@ label {
 
 .learn-more a {
     color: #232323;
-    text-transform: uppercase;
     font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: lowercase;
 }
 
 .learn-more a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
+
+
 
 
 
@@ -513,35 +606,36 @@ label {
 5. Service area style
 -------------------------------- */
 
-.service-section {
-    padding: 100px 0 50px;
-}
-
 .single-service {
-    padding: 30px;
-    transition: 0.3s;
+    padding: 0 30px;
+    transition: all 0.3s ease 0s;
 }
 
 .single-service:hover h5 {
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 .single-service i {
     font-size: 36px;
-    color: #e74c3c;
+    color: #D9BF77;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .single-service h5 {
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin: 25px 0;
-    transition: 0.3s;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    transition: all 0.3s ease 0s;
 }
 
 .single-service p {
     margin: 0;
 }
+
+.col-md-4.col-sm-6:nth-child(n+4) .single-service {
+    margin-top: 30px;
+}
+
 
 
 
@@ -569,7 +663,7 @@ label {
     margin: 25px 0 20px;
     display: block;
     letter-spacing: 2px;
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 .single-counter h6 {
@@ -578,9 +672,12 @@ label {
     letter-spacing: 2px;
 }
 
+
+
 /* -----------------------------
 8. Testimonial area style
 -------------------------------- */
+
 .portfolio-filter li {
     display: inline;
     margin: 0 15px;
@@ -603,21 +700,21 @@ label {
 }
 
 .portfolio-filter li a::before {
-    background: #e74c3c;
+    background: #D9BF77;
     content: "";
     display: block;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     height: 1.5px;
-    width: 40px;
+    width: 100%;
     opacity: 0;
     transition: 0.3s;
 }
 
 .portfolio-filter li a:hover::before,
-.portfolio-filter li.active a::before{
+.portfolio-filter li.active a::before {
     opacity: 1;
 }
 
@@ -632,16 +729,23 @@ label {
     position: relative;
 }
 
-.item-thumbnail img {
-    width: 100%;
-}
-
 .item-thumbnail {
     position: relative;
+    overflow: hidden;
+}
+
+.item-thumbnail img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s linear 0s;
+}
+
+.single-portfolio-item:hover .item-thumbnail img {
+    transform: scale(1.1);
 }
 
 .item-thumbnail::before {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     content: "";
     position: absolute;
     left: 0;
@@ -659,63 +763,191 @@ label {
 
 .item-description {
     position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    text-align: center;
-    width: 100%;
+    bottom: 40px;
+    left: 20px;
     z-index: 2;
     opacity: 0;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s linear 0s;
 }
 
 .single-portfolio-item:hover .item-description {
     opacity: 1;
-    top: 50%;
+    left: 40px;
 }
 
-.item-description > h3 {
-  margin-bottom: 25px;
+.item-description h3 {
+    margin-bottom: 0;
 }
 
 .item-description h3 a {
     color: #ffffff;
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 20px;
+    text-transform: unset;
     font-weight: 400;
 }
 
 .item-description h3 a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 .portfolio-cat li {
-  display: inline;
-  margin: 5px;
-  position: relative;
+    display: inline;
+    margin-right: 10px;
+    position: relative;
 }
 
 .portfolio-cat li::before {
-  color: #e74c3c;
-  content: "/";
-  left: -8px;
-  position: absolute;
-  top: 0;
-  transition: all 0.3s ease 0s;
+    color: #fff;
+    content: ",";
+    font-size: 20px;
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    transition: all 0.3s ease 0s;
 }
 
-.portfolio-cat li:first-child::before {
+.portfolio-cat li:last-child::before {
     display: none;
 }
 
 .portfolio-cat li a {
-  color: #e74c3c;
-  display: inline-block;
-  font-size: 13px;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: lowercase;
 }
+
+.portfolio-cat li a:hover {
+    color: #D9BF77;
+}
+
+.portfolio-thumbnail img {
+    width: 100%;
+}
+
+.single-information {
+    margin-bottom: 50px;
+}
+
+.single-information:last-child {
+    margin-bottom: 0;
+}
+
+.single-information p {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.single-information a {
+    text-decoration: underline;
+    font-weight: 400;
+    color: #D9BF77;
+}
+
+.single-information a:hover {
+    color: #666;
+}
+
+.services-list li {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.single-portfolio-wrapper {
+    margin-top: 50px;
+}
+
+.single-portfolio-wrapper .slick-dots {
+    bottom: -30px;
+}
+
+.single-portfolio-wrapper .slick-dots li button::before {
+    font-size: 40px;
+}
+
+.single-portfolio-wrapper .slick-prev,
+.single-portfolio-wrapper .slick-next {
+    height: 60px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.single-portfolio-wrapper .slick-prev:hover,
+.single-portfolio-wrapper .slick-next:hover {
+    background: #D9BF77;
+}
+
+.related-project-title {
+    padding-left: 15px;
+    margin-bottom: 20px;
+    `
+}
+
+.related-thumbnail a {
+    position: relative;
+    display: block;
+}
+
+.related-thumbnail img {
+    width: 100%;
+}
+
+.related-thumbnail a::before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.related-project:hover .related-thumbnail a::before {
+    opacity: 1;
+}
+
+.related-content {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.related-project:hover .related-content {
+    opacity: 1;
+}
+
+.related-content h4 a {
+    color: #ffffff;
+}
+
+.related-content h4 a:hover {
+    color: #D9BF77;
+}
+
+.single-information p i,
+.single-information a i,
+.services-list li i {
+    padding-right: 7px;
+}
+
+.single-information a i {
+    color: #666;
+}
+
+
+
+
 
 /* -----------------------------
 8. Testimonial area style
@@ -742,7 +974,7 @@ label {
 
 .tab-conetnt i {
     font-size: 50px;
-    color: #e74c3c;
+    color: #D9BF77;
     margin-bottom: 20px;
 }
 
@@ -777,7 +1009,7 @@ label {
 }
 
 .about-bottom-content li.active h6::before {
-    background: #e74c3c;
+    background: #D9BF77;
     content: "";
     display: block;
     position: absolute;
@@ -794,12 +1026,18 @@ label {
 
 
 
+
 /* -----------------------------
 9. Call to action area style
 -------------------------------- */
 
 .call-to-action {
     background: #000;
+}
+
+.call-to-action-content {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .call-to-action-content h6,
@@ -812,14 +1050,24 @@ label {
 .call-to-action-content h6 {
     text-transform: uppercase;
     font-size: 14px;
-    color: #e74c3c;
+    color: #D9BF77;
     letter-spacing: 6px;
+    margin-bottom: 0;
 }
 
 .call-to-action-content h1 {
-    margin: 50px 0;
-    letter-spacing: 6px;
+    margin: 40px 0;
 }
+
+.call-to-action-content h2 {
+    margin-bottom: 25px;
+}
+
+.call-to-action-content>p {
+    margin-bottom: 30px;
+}
+
+
 
 
 /* -----------------------------
@@ -875,12 +1123,12 @@ label {
 }
 
 .member-content p {
-  color: #dcdcdc;
-  font-size: 12px;
-  font-style: oblique;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    color: #dcdcdc;
+    font-size: 12px;
+    font-style: oblique;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .member-cat li {
@@ -894,8 +1142,10 @@ label {
 }
 
 .member-cat li a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
+
+
 
 
 /* -----------------------------
@@ -935,9 +1185,9 @@ label {
     font-weight: 600;
 }
 
-.slick-prev::before,
-.slick-next::before {
-    color: #e74c3c;
+.testimonial-wrapper .slick-prev::before,
+.testimonial-wrapper .slick-next::before {
+    color: #D9BF77;
     opacity: 0;
 }
 
@@ -958,9 +1208,11 @@ label {
 
 .slick-dots li button:hover::before,
 .slick-dots li.slick-active button::before {
-    color: #e74c3c;
+    color: #D9BF77;
     opacity: 1;
 }
+
+
 
 
 /* -----------------------------
@@ -999,7 +1251,7 @@ label {
 }
 
 .blog-description h6 {
-    color: #e74c3c;
+    color: #D9BF77;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1015,6 +1267,8 @@ label {
 .blog-footer span {
     color: #999;
     font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .blog-footer span i {
@@ -1029,12 +1283,249 @@ label {
     float: right;
 }
 
+.post-thumbnail img {
+    width: 100%;
+}
 
+.blog-post-wrapper .slick-dots {
+    bottom: 20px;
+}
 
+.post-meta {
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-left: 2px;
+}
 
+.post-meta li {
+    float: left;
+    margin-right: 15px;
+}
 
+.post-meta li a {
+    color: #666;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
+.post-meta li a:hover {
+    color: #D9BF77;
+}
 
+.post-meta li a i {
+    font-size: 15px;
+    padding-right: 7px;
+}
+
+.post-description-inner img {
+    width: 100%;
+}
+
+.blog-post {
+    margin-bottom: 50px;
+}
+
+.comment-title {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.media-list {
+    margin-bottom: 40px;
+}
+
+.media-list li {
+    padding: 20px 0 30px;
+}
+
+.media-list li.media-reply {
+    padding: 20px 0 30px 30px;
+}
+
+.media {
+    overflow: hidden;
+    margin: 0;
+}
+
+.media-thubnail {
+    float: left;
+}
+
+.media-content {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.media-content h5 {
+    margin: 0;
+}
+
+.media-content p {
+    margin-bottom: 5px;
+}
+
+.media-content p span {
+    text-transform: uppercase;
+}
+
+.media-content a {
+    color: #666;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.media-content a:hover {
+    color: #D9BF77;
+}
+
+.media-content a i {
+    padding-right: 7px;
+}
+
+.comment-form {
+    margin-top: 30px;
+}
+
+.comment-form p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.search-form input {
+    background: #fff none repeat scroll 0 0;
+    border-color: currentcolor currentcolor #eee;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    height: 50px;
+    letter-spacing: 2px;
+    padding: 0 40px 0 15px;
+    width: 100%;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form button {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #737272;
+    font-size: 15px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-form button:hover {
+    color: #D9BF77;
+}
+
+.single-widget {
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.tags a {
+    color: #232323;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 5px 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+.tags a:hover {
+    background: #D9BF77;
+    color: #fff;
+}
+
+.post-category-list li a {
+    border-bottom: 1px solid #e5e5e5;
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.post-category-list li a:hover {
+    color: #D9BF77;
+    padding-left: 5px;
+}
+
+.post-category-list li a:hover span {
+    padding-right: 5px;
+}
+
+.post-category-list li a span {
+    float: right;
+    transition: all 0.3s ease 0s;
+}
+
+.category-widget .widget-title {
+    margin-bottom: 10px;
+}
+
+.single-post-widget {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.widget-image {
+    overflow: hidden;
+    width: 80px;
+    float: left;
+}
+
+.single-post-widget img {
+    display: inline-block;
+}
+
+.post-widget-content {
+    float: left;
+    padding-left: 20px;
+    width: calc(100% - 80px);
+    margin-top: 18px;
+}
+
+.post-widget-content h4 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.post-widget-content h4 a:hover {
+    color: #D9BF77;
+}
+
+.post-widget-content p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.single-widget:last-child {
+    margin-bottom: 0;
+}
 
 
 
@@ -1048,14 +1539,15 @@ label {
     margin: 0 auto;
 }
 
+.subscribe-heading {
+    margin-bottom: 50px;
+}
+
 .subscribe-heading h4 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 16px;
-}
-
-.subscribe-btn {
-    margin-top: 80px;
+    `
 }
 
 .subscribe-form .input-group {
@@ -1078,20 +1570,10 @@ label {
 }
 
 .subscribe-input input:focus {
-    border: 1px solid #e74c3c;
+    border: 1px solid #D9BF77;
 }
 
-.note {
-    width: 60%;
-}
 
-.note>p {
-    margin-top: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 11px;
-    margin-bottom: 0;
-}
 
 
 /* -----------------------------
@@ -1113,9 +1595,10 @@ label {
 }
 
 .conatact-icon i {
-    color: #e74c3c;
+    color: #D9BF77;
     font-size: 18px;
     display: block;
+    font-weight: 600;
 }
 
 .contact-information {
@@ -1124,7 +1607,6 @@ label {
 }
 
 .contact-information h6 {
-    text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
     color: #666;
@@ -1142,11 +1624,7 @@ label {
     letter-spacing: 2px;
 }
 
-.contact-information .address {
-    text-transform: uppercase;
-}
-
-.contact-wrapper .form-control {
+.form-control {
     box-shadow: none;
     border-radius: 0;
     border: 1px solid #e5e5e5;
@@ -1156,11 +1634,12 @@ label {
     letter-spacing: 3px;
 }
 
-.contact-wrapper .form-control:focus {
-    border: 1px solid #e74c3c;
+.form-control:focus {
+    border: 1px solid #D9BF77;
+    box-shadow: none;
 }
 
-.contact-wrapper textarea.form-control {
+textarea.form-control {
     min-height: 200px;
     padding-top: 15px;
 }
@@ -1171,13 +1650,15 @@ label {
 }
 
 
+
+
 /* -----------------------------
 14. Footer area style
 -------------------------------- */
 
 .theme-footer-section {
     background: #000;
-    padding-bottom: 30px; 
+    padding-bottom: 30px;
 }
 
 .page-header {
@@ -1196,8 +1677,9 @@ label {
 }
 
 .copy-right-info span {
-    color: #e74c3c;
-    transition: 0.3s;
+    color: #D9BF77;
+    margin: 0 3px;
+    transition: all 0.3s ease 0s;
 }
 
 .copy-right-info span:hover {
@@ -1219,7 +1701,7 @@ label {
 }
 
 .footer-social-menu li a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 .footer-main-menu {
@@ -1238,30 +1720,25 @@ label {
 }
 
 .footer-main-menu li a:hover {
-    color: #e74c3c;
+    color: #D9BF77;
 }
 
 
 .to-top-btn {
-    background: #e74c3c none repeat scroll 0 0;
-    border-radius: 2px;
     bottom: 30px;
-    color: #ffffff;
-    font-size: 20px;
-    height: 30px;
-    line-height: 28px;
+    color: #D9BF77;
+    font-size: 36px;
     opacity: 0;
     position: fixed;
     right: 30px;
-    text-align: center;
     transform: translateY(20px);
     transition: all 0.3s ease 0s;
     visibility: hidden;
-    width: 30px;
+    z-index: 9999;
 }
 
 .to-top-btn:focus {
-    color: #fff;
+    color: #D9BF77;
 }
 
 .to-top-btn.to-top-show {
@@ -1272,12 +1749,5 @@ label {
 }
 
 .to-top-btn.to-top-show:hover {
-    color: #fff;
     opacity: .75;
 }
-
-
-
-
-
-

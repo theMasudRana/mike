@@ -15,60 +15,64 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Main wrapper start -->
     <div class="wrapper">
         <!-- Header area start -->
-        <header class="header-area" id="header-area" data-spy="affix" data-offset-top="280" data-smooth-scroll="true">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-3">
-                        <div class="logo-wrapper">
-                            <a class="logo" href="index.html"><i class=""></i>mike</a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-9 hidden-sm hidden-xs">
-                        <div class="menu-area">
-                            <nav class="theme-menu">
-                                <ul class="main-menu">
-                                    <li class="active"><a href="#home">Home</a></li>
-                                    <li><a href="#service">services</a></li>
-                                    <li><a href="#about">about us</a></li>
-                                    <li><a href="#portfolio">portfolio</a></li>
-                                    <li><a href="#team">team</a></li>
-                                    <li><a href="#blog">blog</a></li>
-                                    <li><a href="#contact">contact</a></li>
+        <header class="header-area">
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand page-scroll" href="index.html">mike.</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav navbar-right hover-style-one">
+                                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                                    <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                                    <li><a class="page-scroll" href="#page-top">Home</a></li>
+                                    <li><a class="page-scroll" href="#service">service</a></li>
+                                    <li><a class="page-scroll" href="#about">About</a></li>
+                                    <li><a class="page-scroll" href="#team">Team</a></li>
+                                    <li><a class="page-scroll" href="#portfolio">portfolio</a></li>
+                                    <li><a class="page-scroll" href="#blog">blog</a></li>
+                                    <li><a class="page-scroll" href="#contact">contact</a></li>
                                 </ul>
-                            </nav>
+                            </div>
+                            <!-- /.navbar-collapse -->
                         </div>
-                    </div>
-                    <div class="mobile-menu-area hidden-md hidden-lg">
-                        <nav class="mobile-menu">
-                            <ul class="mobile-menu-nav">
-                                <li class="active"><a href="#home">Home</a></li>
-                                <li><a href="#service">services</a></li>
-                                <li><a href="#about">about us</a></li>
-                                <li><a href="#portfolio">portfolio</a></li>
-                                <li><a href="#team">team</a></li>
-                                <li><a href="#blog">blog</a></li>
-                                <li><a href="#contact">contact</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
-            </div>
+                <!-- /.container -->
+            </nav>
         </header>
         <!-- Header area end -->
         <!-- Slider area start -->
-        <div class="theme-slider-area text-center" id="home">
-            <div class="slider-message">
-                <h1>mike sun</h1>
+        <div class="slider-area">
+            <div class="slider-wrapper">
+                <div class="single-slider slider-1 text-center">
+                    <div class="slider-content">
+                        <h1>We build great brands.</h1>
+                    </div>
+                </div>
+                <div class="single-slider slider-2 text-center">
+                    <div class="slider-content">
+                        <h1>Specialized in brand experience.</h1>
+                    </div>
+                </div>
             </div>
             <div class="scroll-btn">
-                <a href="#feature">
-                    <i class="bi bi-mouse"></i>
-                    <h4>scroll down</h4>
-                </a>
+                <div class="scroll-btn-wrapper">
+                    <span class="scroll-ball">mm</span>
+                </div>
             </div>
         </div>
         <!-- Slider area end -->
@@ -81,7 +85,10 @@
                         <div class="col-md-12">
                             <div class="area-heading text-center">
                                 <h2 class="area-title">welcome to mike</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -110,13 +117,16 @@
             </div>
             <!-- theme feature section end -->
             <!-- theme service section start -->
-            <div class="service-section gray-bg" id="service">
+            <div class="service-section gray-bg theme-section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="area-heading text-center">
                                 <h2 class="area-title">our services</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,7 +184,10 @@
                         <div class="col-md-12">
                             <div class="area-heading text-center">
                                 <h2 class="area-title">our approach</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,7 +291,10 @@
                         <div class="col-md-12">
                             <div class="area-heading text-center">
                                 <h2 class="area-title">our recent works</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -451,7 +467,10 @@
                         <div class="col-md-12">
                             <div class="area-heading text-center">
                                 <h2 class="area-title">meet the team</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -520,8 +539,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="area-heading text-center">
-                                <h2 class="area-title">what client's say</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <h2 class="area-title">what clients say</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -570,14 +592,17 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="area-heading text-center">
-                                <h2 class="area-title">what's new</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <h2 class="area-title">blogs</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
-                            <div class="single-blog text-center">
+                            <article class="single-blog text-center">
                                 <div class="blog-top-content">
                                     <div class="blog-heading">
                                         <h3>what happens in the brain</h3>
@@ -591,10 +616,10 @@
                                     <span class="blog-date"><i class="bi bi-calendar"></i> 20 July</span>
                                     <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <div class="single-blog text-center">
+                            <article class="single-blog text-center">
                                 <div class="blog-top-content">
                                     <div class="blog-heading">
                                         <h3>what goes around comes around</h3>
@@ -608,16 +633,16 @@
                                     <span class="blog-date"><i class="bi bi-calendar"></i> 22 July</span>
                                     <span class="blog-time"><i class="bi bi-hand-watch"></i> 03 min read</span>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                         <div class="col-md-4 hidden-sm">
-                            <div class="single-blog text-center">
+                            <article class="single-blog text-center">
                                 <div class="blog-top-content">
                                     <div class="blog-heading">
                                         <h3>the things we lost in the fire</h3>
                                     </div>
                                     <div class="blog-description">
-                                        <h6>development, mobile</h6>
+                                        <h6>web design</h6>
                                         <img src="img/avatar/3.jpg" alt="">
                                     </div>
                                 </div>
@@ -625,7 +650,7 @@
                                     <span class="blog-date"><i class="bi bi-calendar"></i> 24 July</span>
                                     <span class="blog-time"><i class="bi bi-hand-watch"></i> 05 min read</span>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                     <div class="row">
@@ -659,9 +684,6 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="note">
-                                    <p>we do not share your information with anyone.</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -674,8 +696,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="area-heading text-center">
-                                <h2 class="area-title">say hello!</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequatur.</p>
+                                <h2 class="area-title">contact with us</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam error sint optio alias minus, nisi officia, aperiam dignissimos molestias necessitatibus. Temporibus, possimus laudantium sunt.</p>
+                                <div class="divider">
+                                    <i class="bi bi-chair1"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -773,9 +798,9 @@
                     <div class="col-md-7">
                         <div class="footer-menu">
                             <ul class="footer-main-menu">
-                                <li><a href="#">news</a></li>
-                                <li><a href="#">&copy;hugenic</a></li>
-                                <li><a href="#">RSS</a></li>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">contact</a></li>
                                 <li><a href="#">your privacy</a></li>
                                 <li><a href="#">contact & directions</a></li>
                             </ul>

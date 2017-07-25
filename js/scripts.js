@@ -3,25 +3,40 @@
 
     // All JavaScript pluging initialization code here
 
-    //One Page Nav
-    $('.main-menu').onePageNav();
-    $('.mobile-menu-nav').onePageNav();
-    $('.scroll-btn').onePageNav();
+    //Scroll to bottom
+    $(".scroll-btn").on('click', function() {
+        $('html,body').animate({
+                scrollTop: $("#feature").offset().top
+            },
+            'slow');
+    });
 
-    //meanmenu
-    $('.mobile-menu').meanmenu();
-    
+    //Slider
+    $(".slider-wrapper").slick({
+        autoplay: false,
+        speed: 300,
+        autoplayspeed: 3000,
+        dots: true,
+        arrows: false,
+        fade: true,
+        easing: 'linear',
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
     // WoW
-	new WOW().init();
+    new WOW().init();
 
-	// CounterUp
-	$(".counter").counterUp({
-		delay: 10,
-		time: 1000
-	});
+    // CounterUp
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000
+    });
 
-	$(".testimonial-wrapper").slick({
-		autoplay: false,
+    //Testimonial
+    $(".testimonial-wrapper").slick({
+        autoplay: false,
         speed: 300,
         autoplayspeed: 3000,
         dots: true,
@@ -34,10 +49,38 @@
             { breakpoint: 767, settings: { slidesToShow: 1 } },
             { breakpoint: 479, settings: { slidesToShow: 1 } },
         ]
-	});
+    });
+
+    //Blog post thumbnail
+    $(".blog-post-wrapper").slick({
+        autoplay: false,
+        speed: 300,
+        autoplayspeed: 3000,
+        dots: true,
+        arrows: false,
+        fade: true,
+        easing: 'linear',
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    //Single Portfolio
+    $(".single-portfolio-wrapper").slick({
+        autoplay: false,
+        speed: 300,
+        autoplayspeed: 3000,
+        dots: true,
+        arrows: true,
+        fade: true,
+        easing: 'linear',
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 
     //Venobox
-    $('.venobox').venobox(); 
+    $('.venobox').venobox();
 
     // Portfolio activation
     $('.portfolio-section').imagesLoaded(function() {
@@ -69,7 +112,7 @@
         });
     });
 
-        /*-------------------------------------------
+    /*-------------------------------------------
       SCROLL TO TOP BUTTON
     ---------------------------------------------*/
     $('body').append('<a id="back-to-top" class="to-top-btn" href="#"><i class="fa fa-angle-up"></i></a>');
@@ -96,6 +139,5 @@
     };
 
 
-    
 
 })(jQuery)
