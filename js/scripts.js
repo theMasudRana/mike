@@ -12,7 +12,7 @@
     });
 
     //Slider
-    $(".slider-wrapper").slick({
+    $(".slider-home-1").slick({
         autoplay: false,
         speed: 300,
         autoplayspeed: 3000,
@@ -39,8 +39,8 @@
         autoplay: false,
         speed: 300,
         autoplayspeed: 3000,
-        dots: true,
-        arrows: false,
+        dots: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -107,7 +107,7 @@
             $('.single-portfolio-item').removeClass('hidden');
             var $grid = $('.portfolio-items').isotope();
             $(this).hide();
-            $('.portfolio-section .load-more').append('<a class="load-more-btn" href="javascript:void(0)">No More Items</a>')
+            $('.portfolio-section .load-more').append('<a class="button-link" href="javascript:void(0)">No More Items</a>')
             event.preventDefault();
         });
     });
@@ -139,5 +139,14 @@
     };
 
 
+    /*-----------------------------------------------------------------------------------
+      PARALLAX ACTIVATION FOT VAITOUS SECTION 
+    /*-----------------------------------------------------------------------------------*/
+    $.stellar({
+        horizontalScrolling: false,
+        scrollProperty: 'scroll',
+        positionProperty: 'position',
+        verticalOffset: 40
+    });
 
 })(jQuery)
