@@ -6,9 +6,19 @@
     //Scroll to bottom
     $(".scroll-btn").on('click', function() {
         $('html,body').animate({
-                scrollTop: $("#feature").offset().top
+                scrollTop: $("#about").offset().top
             },
             'slow');
+    });
+
+
+    // WoW
+    new WOW().init();
+
+    // CounterUp
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000
     });
 
     //Slider
@@ -24,25 +34,15 @@
         slidesToShow: 1,
         slidesToScroll: 1
     });
-
-    // WoW
-    new WOW().init();
-
-    // CounterUp
-    $(".counter").counterUp({
-        delay: 10,
-        time: 1000
-    });
-
     //Testimonial
-    $(".testimonial-wrapper").slick({
+    $(".brand-logo-slider").slick({
         autoplay: false,
         speed: 300,
         autoplayspeed: 3000,
         dots: false,
         arrows: true,
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 6,
         slidesToScroll: 1,
         responsive: [
             { breakpoint: 991, settings: { slidesToShow: 1 } },

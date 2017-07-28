@@ -179,6 +179,13 @@ label {
     padding: 100px 0;
 }
 
+.theme-section-fix {
+    margin-top: -80px;
+    padding: 180px 0;
+}
+.no-ex-padding {
+  padding-bottom: 100px;
+}
 .white-bg {
     background: #fff;
 }
@@ -186,9 +193,11 @@ label {
 .gray-bg {
     background: #f8f8f8;
 }
+
 .dark-bg {
-    background: #000;
+    background: #111;
 }
+
 
 
 
@@ -198,26 +207,32 @@ label {
 ---------------------------------*/
 
 .button {
-  background: #d9bf77 none repeat scroll 0 0;
-  border: 1px solid transparent;
-  border-radius: 40px;
-  color: #fff;
-  display: inline-block;
-  font-family: "Poppins",sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  height: 45px;
-  letter-spacing: 1px;
-  line-height: 45px;
-  padding: 0 30px;
-  text-transform: capitalize;
-  transition: all 0.4s ease 0s;
+    background: #d9bf77 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    padding: 0 30px;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
 }
 
 .button:hover {
-    background: transparent;
-    color: #D9BF77;
-    border: 1px solid #D9BF77;
+    background: #141010;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.dark-bg .button:hover {
+    background: #fff;
+    color: #d9bf77;
+    border: 1px solid transparent;
 }
 
 .button.button-larg {
@@ -227,6 +242,7 @@ label {
 .button.button-small {
     padding: 0 25px;
 }
+
 
 
 
@@ -274,6 +290,7 @@ label {
 
 
 
+
 /* -----------------------------
 4. Header area style
 -------------------------------- */
@@ -282,20 +299,22 @@ label {
 .navbar>.container-fluid .navbar-brand {
     margin-left: 0;
 }
+
 .navbar-right {
-  float: right;
-  margin-right: 0;
+    float: right;
+    margin-right: 0;
 }
+
 .header-area .navbar-brand {
-  color: #ffffff;
-  display: inline-block;
-  font-size: 28px;
-  font-weight: 700;
-  height: auto;
-  letter-spacing: 2px;
-  line-height: 1;
-  padding: 15px 0;
-  text-transform: lowercase;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 15px 0;
+    text-transform: lowercase;
 }
 
 .nav>li>a:focus,
@@ -308,14 +327,14 @@ label {
     padding: 20px 0;
 }
 
-.header-area .navbar-nav > li > a {
-  color: #ffffff;
-  font-family: poppins;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  padding: 0;
-  text-transform: uppercase;
+.header-area .navbar-nav>li>a {
+    color: #ffffff;
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0;
+    text-transform: uppercase;
 }
 
 .header-area .navbar-nav>li.active>a,
@@ -324,16 +343,17 @@ label {
 }
 
 .header-area .navbar {
-  margin-bottom: 0;
-  padding: 25px 0;
-  transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+    margin-bottom: 0;
+    padding: 25px 0;
+    transition: background 0.3s ease-in-out 0s, padding 0.3s ease-in-out 0s;
 }
 
 .header-area .top-nav-collapse {
-    background: #141010 none repeat scroll 0 0;
+    background: #222 none repeat scroll 0 0;
     border: medium none;
     padding: 10px 0;
 }
+
 .header-area .navbar-toggle {
     background-color: transparent;
     background-image: none;
@@ -361,9 +381,10 @@ label {
     margin-top: 5px;
 }
 
-.header-area .navbar-nav > li > a.overlay-menu-trigger {
-  font-size: 14px;
+.header-area .navbar-nav>li>a.overlay-menu-trigger {
+    font-size: 14px;
 }
+
 
 
 /* -----------------------------
@@ -391,61 +412,65 @@ label {
 }
 
 .slider-content h1 {
-  color: #ffffff;
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 70px;
-  margin-bottom: 30px;
-  text-transform: unset;
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 70px;
+    margin-bottom: 30px;
+    text-transform: unset;
 }
 
 .slider-navegarion-style-one .slick-dots {
-  bottom: auto;
-  right: 150px;
-  text-align: right;
-  top: 50%;
-  width: auto;
+    bottom: auto;
+    right: 150px;
+    text-align: right;
+    top: 50%;
+    width: auto;
 }
+
 .slider-navegarion-style-one .slick-dots li {
-  cursor: pointer;
-  display: block;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: auto;
+    cursor: pointer;
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
 }
+
 .slider-navegarion-style-one .slick-dots li button::before {
-  background: #fff none repeat scroll 0 0;
-  content: "";
-  height: 1px;
-  left: 0;
-  line-height: 1;
-  opacity: 1;
-  transition: .3s ease-in-out 0s;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 25px;
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    line-height: 1;
+    opacity: 1;
+    transition: .3s ease-in-out 0s;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 25px;
 }
+
 .slider-navegarion-style-one .slick-dots li button {
-  background: transparent none repeat scroll 0 0;
-  border: 0 none;
-  color: transparent;
-  cursor: pointer;
-  display: block;
-  font-size: 0;
-  height: auto;
-  line-height: 0;
-  outline: medium none;
-  padding: 4px 0;
-  width: 25px;
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: auto;
+    line-height: 0;
+    outline: medium none;
+    padding: 4px 0;
+    width: 25px;
 }
-.slider-navegarion-style-one .slick-dots li button:hover::before, 
+
+.slider-navegarion-style-one .slick-dots li button:hover::before,
 .slider-navegarion-style-one .slick-dots li.slick-active button::before {
-  background: #d9bf77 none repeat scroll 0 0;
-  width: 30px;
+    background: #d9bf77 none repeat scroll 0 0;
+    width: 30px;
 }
 
 
@@ -487,6 +512,7 @@ label {
 }
 
 
+
 /* Standard syntax */
 
 @keyframes mike-slider-anim {
@@ -503,6 +529,7 @@ label {
         opacity: 0;
     }
 }
+
 
 
 /* -----------------------------
@@ -558,6 +585,7 @@ label {
 
 
 
+
 /* -----------------------------
 5. About area style
 -------------------------------- */
@@ -589,6 +617,7 @@ label {
 
 
 
+
 /* -----------------------------
 5. Feature area style
 -------------------------------- */
@@ -596,6 +625,7 @@ label {
 .feature-content p {
     line-height: 30px;
 }
+
 .button-link::before {
     background: #D9BF77;
     content: "";
@@ -607,6 +637,7 @@ label {
     width: 50px;
     height: 2px;
 }
+
 .button-link {
     color: #232323;
     font-size: 14px;
@@ -619,6 +650,7 @@ label {
 .button-link:hover {
     color: #D9BF77;
 }
+
 
 
 
@@ -661,6 +693,7 @@ label {
 
 
 
+
 /* -----------------------------
 7. Counter area style
 -------------------------------- */
@@ -680,20 +713,21 @@ label {
 }
 
 .single-counter span {
-  color: #d9bf77;
-  display: block;
-  font-size: 36px;
-  font-weight: 800;
-  margin: 35px 0 15px;
+    color: #d9bf77;
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 35px 0 15px;
 }
 
 .single-counter h6 {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0;
-  margin: 0;
-  text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0;
+    text-transform: capitalize;
 }
+
 
 
 
@@ -707,14 +741,14 @@ label {
 }
 
 .portfolio-filter li a {
-  color: #888;
-  display: inline-block;
-  font-family: poppins;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 0;
-  position: relative;
-  text-transform: lowercase;
+    color: #888;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0;
+    position: relative;
+    text-transform: lowercase;
 }
 
 .portfolio-filter li a:hover,
@@ -723,17 +757,17 @@ label {
 }
 
 .portfolio-filter li a::before {
-  background: #d9bf77 none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  opacity: 0;
-  position: absolute;
-  transform: translateX(-50%);
-  transition: all 0.3s ease 0s;
-  width: 100%;
+    background: #d9bf77 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.3s ease 0s;
+    width: 100%;
 }
 
 .portfolio-filter li a:hover::before,
@@ -751,9 +785,11 @@ label {
     width: 33.33333333%;
     position: relative;
 }
+
 .portfolio-4-column .single-portfolio-item {
     width: 25%;
 }
+
 .item-thumbnail {
     position: relative;
     overflow: hidden;
@@ -801,13 +837,14 @@ label {
 }
 
 .item-description h3 {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-  text-transform: unset;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: unset;
 }
+
 .item-description h3 a:hover {
     color: #D9BF77;
 }
@@ -833,14 +870,14 @@ label {
 }
 
 .portfolio-cat li a {
-  color: #fff;
-  display: inline-block;
-  font-family: poppins;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    font-family: poppins;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 .portfolio-cat li a:hover {
@@ -968,21 +1005,26 @@ label {
 .single-information a i {
     color: #666;
 }
+
 .load-more {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 .mt-50 {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 
 
 
 /* -----------------------------
 8. Testimonial area style
 -------------------------------- */
+
 .about-section {
-  background: rgba(0, 0, 0, 0) url("img/bg/1.jpg") repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url("img/bg/1.jpg") repeat scroll center center / cover;
 }
+
 .about-section .area-title,
 .about-section .area-heading p {
     color: #ffffff;
@@ -1005,17 +1047,17 @@ label {
 }
 
 .tab-conetnt h2 {
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0;
-  margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 20px 0;
 }
 
 .tab-conetnt p {
-  color: #bbb;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 24px;
+    color: #bbb;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .about-bottom-content li {
@@ -1028,13 +1070,13 @@ label {
 }
 
 .tab-heading-content h6 {
-  color: #aaa;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  position: relative;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
 }
 
 .about-bottom-content li.active h6::before {
@@ -1056,32 +1098,32 @@ label {
 
 
 
+
 /* -----------------------------
 9. Call to action area style
 -------------------------------- */
-
-
 
 .call-to-action-content {
     width: 70%;
     margin: 0 auto;
 }
+
 .call-to-action-content h6 {
-  color: #d9bf77;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  text-transform: unset;
+    color: #d9bf77;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: unset;
 }
 
 .call-to-action-content h1 {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin: 40px 0;
-  text-transform: unset;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 40px 0;
+    text-transform: unset;
 }
 
 .call-to-action-content h2 {
@@ -1091,6 +1133,7 @@ label {
 .call-to-action-content>p {
     margin-bottom: 30px;
 }
+
 
 
 
@@ -1157,9 +1200,10 @@ label {
 }
 
 .member-cat li {
-  display: inline;
-  margin: 0 8px;
+    display: inline;
+    margin: 0 8px;
 }
+
 .member-cat li a {
     display: inline-block;
     color: #fff;
@@ -1168,6 +1212,14 @@ label {
 .member-cat li a:hover {
     color: #D9BF77;
 }
+
+
+/*Brandi log area*/
+
+.single-brand-logo img {
+    width: 100%;
+}
+
 
 
 /* -----------------------------
@@ -1185,17 +1237,18 @@ label {
 }
 
 .blog-heading h3 {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 0;
-    padding-bottom: 60px;
-    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     position: relative;
 }
 
 .blog-heading h3::before {
     background: #e5e5e5 none repeat scroll 0 0;
-    bottom: 20px;
+    bottom: 0;
     content: "";
     display: block;
     height: 1px;
@@ -1221,7 +1274,7 @@ label {
 
 .blog-footer span {
     color: #999;
-    font-weight: 500;
+    font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -1486,6 +1539,7 @@ label {
 
 
 
+
 /* -----------------------------
 13. Subscribe area style
 -------------------------------- */
@@ -1499,10 +1553,9 @@ label {
 }
 
 .subscribe-heading h4 {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 16px;
-    `
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
 }
 
 .subscribe-form .input-group {
@@ -1513,20 +1566,27 @@ label {
     display: inline-block;
 }
 
+.subscribe-input button {
+    border-radius: 0 40px 40px 0;
+    margin-left: -5px;
+    position: relative;
+    top: 1px;
+}
+
 .subscribe-input input {
     border: 1px solid #e5e5e5;
+    border-radius: 40px 0 0 40px;
+    font-size: 13px;
     font-weight: 400;
-    letter-spacing: 3px;
-    padding: 0 20px;
     height: 45px;
-    text-transform: uppercase;
+    padding: 0 20px;
     width: 450px;
-    margin-right: 5px;
 }
 
 .subscribe-input input:focus {
     border: 1px solid #D9BF77;
 }
+
 
 
 
@@ -1540,7 +1600,7 @@ label {
 }
 
 .single-conatct-address {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .conatact-icon {
@@ -1550,10 +1610,11 @@ label {
 }
 
 .conatact-icon i {
-    color: #D9BF77;
-    font-size: 18px;
+    color: #d9bf77;
     display: block;
+    font-size: 20px;
     font-weight: 600;
+    margin-top: 6px;
 }
 
 .contact-information {
@@ -1562,13 +1623,15 @@ label {
 }
 
 .contact-information h6 {
-    font-size: 12px;
-    font-weight: 400;
-    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
 .contact-information p {
-    color: #000;
+    color: #232323;
+    font-size: 14px;
     font-weight: 500;
     margin: 0;
 }
@@ -1580,13 +1643,11 @@ label {
 }
 
 .form-control {
-    box-shadow: none;
-    border-radius: 0;
     border: 1px solid #e5e5e5;
-    height: 50px;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 45px;
     padding: 0 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
 .form-control:focus {
@@ -1607,13 +1668,14 @@ textarea.form-control {
 
 
 
+
 /* -----------------------------
 14. Footer area style
 -------------------------------- */
 
 .theme-footer-section {
-    background: #000;
-    padding-bottom: 30px;
+    background: #222 none repeat scroll 0 0;
+    padding-bottom: 25px;
 }
 
 .page-header {
@@ -1623,12 +1685,21 @@ textarea.form-control {
 }
 
 .theme-footer-section h1 {
-    color: #ffffff
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-transform: lowercase;
 }
 
 .copy-right-info p {
+    color: #a0a0a0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin-bottom: 0;
-    margin-top: 5px;
+    text-transform: uppercase;
 }
 
 .copy-right-info span {
@@ -1647,12 +1718,13 @@ textarea.form-control {
 
 .footer-social-menu li {
     display: inline;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 .footer-social-menu li a {
-    display: inline-block;
     color: #666;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .footer-social-menu li a:hover {
@@ -1669,9 +1741,12 @@ textarea.form-control {
 }
 
 .footer-main-menu li a {
+    color: #a0a0a0;
     display: block;
-    color: #666;
-    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .footer-main-menu li a:hover {
