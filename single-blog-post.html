@@ -16,12 +16,19 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!--Loader-->
+    <div class="loader">
+        <div class="loader-area">
+            <h1 class="circle-logo">Mike.</h1>
+        </div>
+    </div>
+    <!-- Loader end -->
     <!-- Main wrapper start -->
     <div class="wrapper">
         <!-- Header area start -->
         <header class="header-area">
             <nav class="navbar navbar-fixed-top" role="navigation">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="navbar-header page-scroll">
@@ -31,20 +38,20 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand page-scroll" href="index.html">mike</a>
+                                <a class="navbar-brand page-scroll" href="index.html">mike.</a>
                             </div>
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                                <ul class="nav navbar-nav navbar-right hover-style-one">
+                                <ul class="nav navbar-nav navbar-right">
                                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                                     <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
                                     <li><a class="page-scroll" href="#page-top">Home</a></li>
-                                    <li><a class="page-scroll" href="index.html#service">service</a></li>
-                                    <li><a class="page-scroll" href="index.html#about">About</a></li>
-                                    <li><a class="page-scroll" href="index.html#team">Team</a></li>
-                                    <li><a class="page-scroll" href="index.html#portfolio">portfolio</a></li>
-                                    <li><a class="page-scroll" href="index.html#blog">blog</a></li>
-                                    <li><a class="page-scroll" href="index.html#contact">contact</a></li>
+                                    <li><a class="page-scroll" href="#about">About</a></li>
+                                    <li><a class="page-scroll" href="#service">service</a></li>
+                                    <li><a class="page-scroll" href="#portfolio">portfolio</a></li>
+                                    <li><a class="page-scroll" href="#blog">blog</a></li>
+                                    <li><a class="page-scroll" href="#contact">contact</a></li>
+                                    <li><a class="overlay-menu-trigger" href="#"><i class="fa fa-bars"></i></a></li>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -60,7 +67,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3 class="breadcrumb-title">single blog post title</h3>
+                        <div class="breadcrumb-title-area">
+                            <h3 class="breadcrumb-title">Single blog post title</h3>
+                        </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="breadcrumb-menu">
@@ -84,17 +93,17 @@
                             <article class="blog-post">
                                 <div class="blog-post-wrapper">
                                     <div class="post-thumbnail">
-                                        <img src="img/blog/1.jpg" alt="">
+                                        <a href="img/blog/larg/1.png" class="venobox"><img src="img/blog/1.jpg" alt=""></a>
                                     </div>
                                     <div class="post-thumbnail">
-                                        <img src="img/blog/2.jpg" alt="">
+                                        <a href="img/blog/larg/1.png" class="venobox"><img src="img/blog/2.jpg" alt=""></a>
                                     </div>
                                     <div class="post-thumbnail">
-                                        <img src="img/blog/3.jpg" alt="">
+                                        <a href="img/blog/larg/1.png" class="venobox"><img src="img/blog/3.jpg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="post-description">
-                                    <h3>what happens in the brain</h3>
+                                    <h3>What happens in the brain</h3>
                                     <ul class="post-meta">
                                         <li><a href="#"><i class="bi bi-user-ID"></i>admin</a></li>
                                         <li><a href="#"><i class="bi bi-calendar"></i>22 july</a></li>
@@ -105,13 +114,13 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="post-description-inner">
-                                                <img src="img/blog/1.jpg" alt="">
+                                                <a href="img/blog/larg/4.jpg" class="venobox"><img src="img/blog/larg/4.jpg" alt=""></a>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ducimus eaque, maxime accusamus a nemo praesentium officiis voluptatibus consectetur modi nostrum ipsa nihil corporis molestias, nesciunt excepturi et provident ut!</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="post-description-inner">
-                                                <img src="img/blog/2.jpg" alt="">
+                                                <a href="img/blog/larg/5.jpg" class="venobox"><img src="img/blog/larg/5.jpg" alt=""></a>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ducimus eaque, maxime accusamus a nemo praesentium officiis voluptatibus consectetur modi nostrum ipsa nihil corporis molestias, nesciunt excepturi et provident ut!</p>
                                             </div>
                                         </div>
@@ -121,7 +130,7 @@
                                 </div>
                             </article>
                             <div class="blog-comment-section">
-                                <h4 class="comment-title">have 4 comments</h4>
+                                <h4 class="comment-title">Have 4 comments</h4>
                                 <ul class="media-list">
                                     <li class="media">
                                         <div class="media-thubnail">
@@ -176,21 +185,21 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <h4 class="comment-title">leave your comment</h4>
+                                <h4 class="comment-title">Leave your comment</h4>
                                 <div class="comment-form">
                                     <form action="" id="mike-comment-form">
                                         <div class="form-group row">
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" placeholder="name" required>
+                                                <input type="text" class="form-control" placeholder="Name" required>
                                             </div>
                                             <div class="col-sm-6">
-                                                <input type="email" class="form-control" placeholder="email" required>
+                                                <input type="email" class="form-control" placeholder="Email" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="3" placeholder="your message"></textarea>
+                                            <textarea class="form-control" name="message" rows="3" placeholder="Your message"></textarea>
                                         </div>
-                                        <button type="submit" class="button">post comment</button>
+                                        <button type="submit" class="button">Post comment</button>
                                         <p class="form-send-comment"></p>
                                     </form>
                                 </div>
@@ -206,53 +215,46 @@
                                 </div>
                             </aside>
                             <aside class="single-widget">
-                                <h4 class="widget-title">tags</h4>
+                                <h4 class="widget-title">Tags</h4>
                                 <div class="tags">
-                                    <a href="#">travel</a>
-                                    <a href="#">drama</a>
-                                    <a href="#">film</a>
-                                    <a href="#">cooking</a>
-                                    <a href="#">design</a>
+                                    <a href="#">Branding</a>
+                                    <a href="#">Design</a>
+                                    <a href="#">CSS</a>
+                                    <a href="#">Development</a>
+                                    <a href="#">Programming</a>
+                                    <a href="#">JavaScritp</a>
+                                    <a href="#">Photoshop</a>
                                 </div>
                             </aside>
                             <aside class="single-widget category-widget">
-                                <h4 class="widget-title">categories</h4>
+                                <h4 class="widget-title">Categories</h4>
                                 <div class="categories">
                                     <ul class="post-category-list">
                                         <li><a href="#">travel <span>[6]</span></a></li>
-                                        <li><a href="#">drama <span>[4]</span></a></li>
-                                        <li><a href="#">film <span>[7]</span></a></li>
-                                        <li><a href="#">cooking <span>[5]</span></a></li>
+                                        <li><a href="#">Development <span>[4]</span></a></li>
+                                        <li><a href="#">Programming <span>[7]</span></a></li>
+                                        <li><a href="#">Branding <span>[5]</span></a></li>
                                     </ul>
                                 </div>
                             </aside>
                             <aside class="single-widget">
-                                <h4 class="widget-title">recent posts</h4>
+                                <h4 class="widget-title">Recent posts</h4>
                                 <div class="recent-post-widget">
                                     <div class="single-post-widget">
-                                        <div class="widget-image">
-                                            <a href="#"><img src="img/blog/widget/1.jpg" alt=""></a>
-                                        </div>
                                         <div class="post-widget-content">
-                                            <h4><a href="#">simple post title</a></h4>
+                                            <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
                                             <p>20 july, 5 min read</p>
                                         </div>
                                     </div>
                                     <div class="single-post-widget">
-                                        <div class="widget-image">
-                                            <a href="#"><img src="img/blog/widget/2.jpg" alt=""></a>
-                                        </div>
                                         <div class="post-widget-content">
-                                            <h4><a href="#">simple post title</a></h4>
+                                            <h4><a href="#">Design ipsum sit branding.</a></h4>
                                             <p>22 july, 3 min read</p>
                                         </div>
                                     </div>
                                     <div class="single-post-widget">
-                                        <div class="widget-image">
-                                            <a href="#"><img src="img/blog/widget/3.jpg" alt=""></a>
-                                        </div>
                                         <div class="post-widget-content">
-                                            <h4><a href="#">simple post title</a></h4>
+                                            <h4><a href="#">Programming dolor sit amet.</a></h4>
                                             <p>24 july, 5 min read</p>
                                         </div>
                                     </div>
@@ -270,7 +272,7 @@
                         <div class="col-md-8 col-md-offset-2 text-center">
                             <div class="subscribe-content text-center">
                                 <div class="subscribe-heading">
-                                    <h4>stay upto date, join our newsletter.</h4>
+                                    <h4>Stay upto date, join our newsletter.</h4>
                                 </div>
                                 <div class="subscribe-btn text-center">
                                     <form action="" method="" class="subscribe-form">
@@ -293,12 +295,12 @@
         </section>
         <!-- Page content area end -->
         <!-- Footer section start -->
-        <footer class="theme-footer-section">
+        <footer class="theme-footer-section wow fadeIn" data-wow-delay="0.2s">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-header text-center">
-                            <h1>M</h1>
+                            <h1>Mike.</h1>
                             <div class="footer-social">
                                 <ul class="footer-social-menu">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>

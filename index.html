@@ -16,12 +16,19 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!--Loader-->
+    <div class="loader">
+        <div class="loader-area">
+            <h1 class="circle-logo">Mike.</h1>
+        </div>
+    </div>
+    <!-- Loader end -->
     <!-- Main wrapper start -->
     <div class="wrapper">
         <!-- Header area start -->
         <header class="header-area">
             <nav class="navbar navbar-fixed-top" role="navigation">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="navbar-header page-scroll">
@@ -42,7 +49,6 @@
                                     <li><a class="page-scroll" href="#about">About</a></li>
                                     <li><a class="page-scroll" href="#service">service</a></li>
                                     <li><a class="page-scroll" href="#portfolio">portfolio</a></li>
-                                    <li><a class="page-scroll" href="#team">Team</a></li>
                                     <li><a class="page-scroll" href="#blog">blog</a></li>
                                     <li><a class="page-scroll" href="#contact">contact</a></li>
                                     <li><a class="overlay-menu-trigger" href="#"><i class="fa fa-bars"></i></a></li>
@@ -59,13 +65,13 @@
         <!-- Slider area start -->
         <div class="slider-area">
             <div class="slider-home-1 slider-navegarion-style-one">
-                <div class="single-slider slider-2 text-center" data-stellar-background-ratio="0.2">
+                <div class="single-slider slider-2 text-center">
                     <div class="slider-content">
-                        <h1>Mike makes your <br> Brands shine.</h1>
+                        <h1>Mike makes your <br> Brand shine.</h1>
                         <a href="#" class="button">meet the team</a>
                     </div>
                 </div>
-                <div class="single-slider slider-1 text-center" data-stellar-background-ratio="0.2">
+                <div class="single-slider slider-1 text-center">
                     <div class="slider-content">
                         <h1>Welcome to mike <br>Best digital agency.</h1>
                         <a href="#" class="button">contact us</a>
@@ -73,7 +79,7 @@
                 </div>
                 <div class="single-slider slider-2 text-center">
                     <div class="slider-content">
-                        <h1>Mike Makes your <br> Brands Shine.</h1>
+                        <h1>Mike Makes your <br> Brand Shine.</h1>
                         <a href="#" class="button">meet the team</a>
                     </div>
                 </div>
@@ -88,7 +94,7 @@
         <!-- Page content area start -->
         <section class="content">
             <!-- theme feature section start -->
-            <div class="theme-section theme-section-fix" id="about">
+            <div class="theme-section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -103,12 +109,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="feature-content wow fadeIn" data-wow-delay="0.2s">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eum, quod. Aspernatur amet obcaecati perferendis autem quas, animi, velit. Animi sit, recusandae magnam adipisci autem veniam ex repudiandae doloribus iure!</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="feature-content wow fadeIn" data-wow-delay="0.4s">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor, eos sequi tempora laudantium temporibus, ad eaque vitae velit quidem excepturi dolorum, voluptatem, tempore possimus. Esse quisquam sequi debitis quas?</p>
                                 </div>
@@ -126,7 +132,7 @@
             </div>
             <!-- theme feature section end -->
             <!-- theme service section start -->
-            <div class="service-section gray-bg theme-section theme-section-fix" id="service">
+            <div class="service-section gray-bg theme-section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -187,7 +193,7 @@
             </div>
             <!-- theme service section end -->
             <!-- theme portfolio section start -->
-            <div class="theme-section portfolio-section theme-section-fix no-ex-padding" id="portfolio">
+            <div class="theme-section portfolio-section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -214,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-items portfolio-4-column wow fadeInUp" data-wow-delay="0.4s">
+                <div class="portfolio-items portfolio-4-column wow fadeIn" data-wow-delay="0.4s">
                     <div class="single-portfolio-item cat1 cat3">
                         <div class="item-content">
                             <div class="item-thumbnail">
@@ -512,7 +518,7 @@
             </div>
             <!-- theme about section end -->
             <!-- theme team section start -->
-            <div class="theme-section team-section theme-section-fix no-ex-padding" id="team">
+            <div class="theme-section team-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -615,7 +621,7 @@
             </div>
             <!-- Branding section end -->
             <!-- theme blog section start -->
-            <div class="theme-section theme-section-fix no-ex-padding" id="blog">
+            <div class="theme-section" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -719,7 +725,7 @@
             </div>
             <!-- theme subscribe section end -->
             <!-- theme conatct section start -->
-            <div class="theme-section theme-section-fix no-ex-padding" id="contact">
+            <div class="theme-section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -843,6 +849,8 @@
     <!-- All JavaScript files included -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkEXfCsbQtrp3XMZYaBcPA17oKuQ--0IM"></script>
+    <script src="js/mike.google.map.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

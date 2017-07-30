@@ -32,7 +32,12 @@
         easing: 'linear',
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            { breakpoint: 991, settings: { dots: false } },
+            { breakpoint: 767, settings: { dots: false } },
+            { breakpoint: 479, settings: { dots: false }},
+        ]        
     });
     //Testimonial
     $(".brand-logo-slider").slick({
@@ -45,9 +50,9 @@
         slidesToShow: 6,
         slidesToScroll: 1,
         responsive: [
-            { breakpoint: 991, settings: { slidesToShow: 1 } },
-            { breakpoint: 767, settings: { slidesToShow: 1 } },
-            { breakpoint: 479, settings: { slidesToShow: 1 } },
+            { breakpoint: 991, settings: { slidesToShow: 3 } },
+            { breakpoint: 767, settings: { slidesToShow: 3 } },
+            { breakpoint: 479, settings: { slidesToShow: 2} },
         ]
     });
 
@@ -56,8 +61,8 @@
         autoplay: false,
         speed: 300,
         autoplayspeed: 3000,
-        dots: true,
-        arrows: false,
+        dots: false,
+        arrows: true,
         fade: true,
         easing: 'linear',
         infinite: true,
@@ -87,6 +92,9 @@
         var $grid = $('.portfolio-items').isotope({
             itemSelector: '.single-portfolio-item',
             percentPosition: true,
+            transitionDuration: '0.2s',
+            transitionDuration: '0.5s',
+            stagger: 30
         })
 
         // Portfolio filtering activation
@@ -111,6 +119,15 @@
             event.preventDefault();
         });
     });
+    
+    /*------------------------------------------------
+     PRELOADER ADDED
+    -------------------------------------------------- */
+    $('.loader').fadeOut('slow', function() {
+        $(".wrapper").animate({
+            opacity: "1"
+        }, 'slow');
+    });    
 
     /*-------------------------------------------
       SCROLL TO TOP BUTTON
@@ -134,7 +151,7 @@
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
-            }, 500);
+            }, 700);
         });
     };
 
