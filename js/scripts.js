@@ -36,8 +36,8 @@
         responsive: [
             { breakpoint: 991, settings: { dots: false } },
             { breakpoint: 767, settings: { dots: false } },
-            { breakpoint: 479, settings: { dots: false }},
-        ]        
+            { breakpoint: 479, settings: { dots: false } },
+        ]
     });
     //Testimonial
     $(".brand-logo-slider").slick({
@@ -52,7 +52,7 @@
         responsive: [
             { breakpoint: 991, settings: { slidesToShow: 3 } },
             { breakpoint: 767, settings: { slidesToShow: 3 } },
-            { breakpoint: 479, settings: { slidesToShow: 2} },
+            { breakpoint: 479, settings: { slidesToShow: 2 } },
         ]
     });
 
@@ -119,7 +119,7 @@
             event.preventDefault();
         });
     });
-    
+
     /*------------------------------------------------
      PRELOADER ADDED
     -------------------------------------------------- */
@@ -127,7 +127,7 @@
         $(".wrapper").animate({
             opacity: "1"
         }, 'slow');
-    });    
+    });
 
     /*-------------------------------------------
       SCROLL TO TOP BUTTON
@@ -160,10 +160,12 @@
       PARALLAX ACTIVATION FOT VAITOUS SECTION 
     /*-----------------------------------------------------------------------------------*/
     $.stellar({
-        horizontalScrolling: false,
+        responsive: true,
         scrollProperty: 'scroll',
-        positionProperty: 'position',
-        verticalOffset: 40
+        parallaxElements: false,
+        horizontalScrolling: false,
+        horizontalOffset: 0,
+        verticalOffset: 0
     });
 
 })(jQuery)
