@@ -193,10 +193,6 @@ label {
     background: #111;
 }
 
-
-
-
-
 /* ------------------------------
 2. Button style
 ---------------------------------*/
@@ -238,11 +234,6 @@ label {
     padding: 0 25px;
 }
 
-
-
-
-
-
 /* -----------------------------
 3. Area heading style
 -------------------------------- */
@@ -280,11 +271,6 @@ label {
     transform: translateY(-50%) translateX(-50%);
     width: 120px;
 }
-
-
-
-
-
 
 /* -----------------------------
 4. Header area style
@@ -380,8 +366,6 @@ label {
     font-size: 14px;
 }
 
-
-
 /* -----------------------------
 4. Slider area style
 -------------------------------- */
@@ -397,6 +381,11 @@ label {
 }
 .slider-2 {
     background-image: url("img/slider/2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.slider-3 {
+    background-image: url("img/slider/3.jpg");
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -510,8 +499,6 @@ label {
     width: 7px;
 }
 
-
-
 /* Standard syntax */
 
 @keyframes mike-slider-anim {
@@ -528,8 +515,6 @@ label {
         opacity: 0;
     }
 }
-
-
 
 /* -----------------------------
 5. Breadcrumb area style
@@ -582,10 +567,6 @@ label {
     color: #D9BF77;
 }
 
-
-
-
-
 /* -----------------------------
 5. About area style
 -------------------------------- */
@@ -612,11 +593,6 @@ label {
 .social-menu li a:hover {
     color: #D9BF77;
 }
-
-
-
-
-
 
 /* -----------------------------
 5. Feature area style
@@ -650,10 +626,6 @@ label {
 .button-link:hover {
     color: #D9BF77;
 }
-
-
-
-
 
 
 /* -----------------------------
@@ -690,10 +662,6 @@ label {
     margin-top: 30px;
 }
 
-
-
-
-
 /* -----------------------------
 7. Counter area style
 -------------------------------- */
@@ -727,9 +695,6 @@ label {
     margin: 0;
     text-transform: capitalize;
 }
-
-
-
 
 /* -----------------------------
 8. portfolio area style
@@ -1014,9 +979,6 @@ label {
     margin-top: 50px;
 }
 
-
-
-
 /* -----------------------------
 8. Testimonial area style
 -------------------------------- */
@@ -1097,10 +1059,6 @@ label {
     color: #ffffff;
 }
 
-
-
-
-
 /* -----------------------------
 9. Call to action area style
 -------------------------------- */
@@ -1137,10 +1095,6 @@ label {
 .call-to-action-content>p {
     margin-bottom: 30px;
 }
-
-
-
-
 
 /* -----------------------------
 10. Team area style
@@ -1216,15 +1170,11 @@ label {
 .member-cat li a:hover {
     color: #D9BF77;
 }
-
-
 /*Brandi log area*/
 
 .single-brand-logo img {
     width: 100%;
 }
-
-
 
 /* -----------------------------
 12. Blog area style
@@ -1595,10 +1545,6 @@ label {
     border: 1px solid #D9BF77;
 }
 
-
-
-
-
 /* -----------------------------
 13. Conatct area style
 -------------------------------- */
@@ -1675,10 +1621,6 @@ textarea.form-control {
     margin-top: 10px;
     margin-bottom: 0;
 }
-
-
-
-
 
 /* -----------------------------
 14. Footer area style
