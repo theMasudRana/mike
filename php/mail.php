@@ -2,6 +2,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['your_name'];
         $email = $_POST['your_email'];
+        $phone = $_POST['your_phone'];
         $subject = $_POST['your_subject'];
         $message = $_POST['your_message'];
 
@@ -9,14 +10,14 @@
         $from = stripslashes($_POST['your_name'])."<".stripslashes($_POST['your_email']).">";
 
         // Recipient Email Address 
-        $to = 'envato@cxwebexperts.com'; 
+        $to = 'envato.xboot@gmail.com'; 
 
         // Email Header 
         $headers = "From: $from\r\n" .
                  "MIME-Version: 1.0\r\n" .
 
         // Message Body 
-        $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message";
+        $body = "Name: $name\nEmail: $email\nPhone: $phone\nSubject: $subject\nMessage: $message";
         
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {

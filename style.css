@@ -1,6 +1,6 @@
 /* -----------------------------
-Template Name: Template name
-Author: Author Name
+Template Name: mike
+Author: xBoot
 ------------------------------- */
 
 
@@ -9,7 +9,22 @@ CSS Table of content
 --------------------------------------
 1. Template default styles
 2. Button style
-3. Header area style
+3. Area heading style
+4. Header area style
+4. Slider area style
+5. Breadcrumb area style
+6. About area style
+7. Feature area style
+8. Service area style
+9. Counter area style
+10. Portfolio area style
+11. Testimonial area style
+12. Call to action area style
+13. Team area style
+14. Blog area style
+15. Subscribe area style
+16. Contact area style
+17. Footer area style
 --------------------------------------*/
 
 
@@ -568,7 +583,7 @@ label {
 }
 
 /* -----------------------------
-5. About area style
+6. About area style
 -------------------------------- */
 
 .about-content h5 span {
@@ -595,7 +610,7 @@ label {
 }
 
 /* -----------------------------
-5. Feature area style
+7. Feature area style
 -------------------------------- */
 
 .feature-content p {
@@ -629,7 +644,7 @@ label {
 
 
 /* -----------------------------
-5. Service area style
+8. Service area style
 -------------------------------- */
 
 .single-service {
@@ -663,7 +678,7 @@ label {
 }
 
 /* -----------------------------
-7. Counter area style
+9. Counter area style
 -------------------------------- */
 
 .counter-wrapper {
@@ -697,7 +712,7 @@ label {
 }
 
 /* -----------------------------
-8. portfolio area style
+10. Portfolio area style
 -------------------------------- */
 
 .portfolio-filter li {
@@ -980,7 +995,7 @@ label {
 }
 
 /* -----------------------------
-8. Testimonial area style
+11. Testimonial area style
 -------------------------------- */
 
 .about-section {
@@ -1060,7 +1075,7 @@ label {
 }
 
 /* -----------------------------
-9. Call to action area style
+12. Call to action area style
 -------------------------------- */
 
 .call-to-action-content {
@@ -1068,15 +1083,17 @@ label {
     margin: 0 auto;
 }
 
-.call-to-action-content h6 {
-    color: #d9bf77;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    text-transform: unset;
+.call-to-action-content p {
+  color: #d9bf77;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-transform: unset;
 }
 
-.call-to-action-content h1 {
+.call-to-action-content h2 {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
@@ -1086,18 +1103,8 @@ label {
     text-transform: unset;
 }
 
-.call-to-action-content h2 {
-  font-size: 28px;
-  letter-spacing: 0;
-  margin-bottom: 20px;
-}
-
-.call-to-action-content>p {
-    margin-bottom: 30px;
-}
-
 /* -----------------------------
-10. Team area style
+13. Team area style
 -------------------------------- */
 
 .member-thumbnail img {
@@ -1177,7 +1184,7 @@ label {
 }
 
 /* -----------------------------
-12. Blog area style
+14. Blog area style
 -------------------------------- */
 
 .single-blog {
@@ -1269,7 +1276,7 @@ label {
 .blog-post-wrapper {
   margin-bottom: 20px;
 }
-.post-description > h3 {
+.post-description > h2 {
   margin-bottom: 10px;
 }
 .post-description-inner img {
@@ -1509,13 +1516,8 @@ label {
     margin-bottom: 0;
 }
 
-
-
-
-
-
 /* -----------------------------
-13. Subscribe area style
+15. Subscribe area style
 -------------------------------- */
 
 .subscribe-content {
@@ -1562,7 +1564,7 @@ label {
 }
 
 /* -----------------------------
-13. Conatct area style
+16. Contact area style
 -------------------------------- */
 
 .contact-address-wrapper {
@@ -1639,7 +1641,7 @@ textarea.form-control {
 }
 
 /* -----------------------------
-14. Footer area style
+17. Footer area style
 -------------------------------- */
 
 .theme-footer-section {
