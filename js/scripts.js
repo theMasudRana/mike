@@ -1,14 +1,11 @@
 (function($) {
     'use strict';
-
-    // All JavaScript pluging initialization code here
-
+   
     //Scroll to bottom
     $(".scroll-btn").on('click', function() {
         $('html,body').animate({
                 scrollTop: $("#about").offset().top
-            },
-            'slow');
+            }, 1000, 'easeInOutExpo');
     });
 
 
@@ -151,7 +148,7 @@
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
-            }, 700);
+            }, 700, 'easeInOutExpo');
         });
     };
 
@@ -161,11 +158,6 @@
     /*-----------------------------------------------------------------------------------*/
     $.stellar({
         responsive: true,
-        scrollProperty: 'scroll',
-        parallaxElements: false,
-        horizontalScrolling: false,
-        horizontalOffset: 0,
-        verticalOffset: 0
+        scrollProperty: 'scroll'
     });
-
 })(jQuery)

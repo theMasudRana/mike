@@ -22,10 +22,16 @@
 ---------------------------------------------------*/
 @media (min-width: 992px) and (max-width: 1169px) {
 .container {width:970px}
-
+.theme-section {
+  padding: 80px 0;
+}
 .slider-content h1 {
   font-size: 40px;
   line-height: 50px;
+}
+.slider-content-2 h1 {
+  font-size: 80px;
+  line-height: normal;
 }
 .header-area .container-fluid {
   padding: 0 30px;
@@ -47,6 +53,9 @@
 }
 .about-bottom-content li {
   margin: 0 10px;
+}
+.follow-menu {
+  margin-bottom: 15px;
 }
 .item-description h3 a {
 	font-size: 18px;
@@ -91,6 +100,21 @@
 .container-fluid {
   padding: 0 15px;
 }
+.slider-content h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.slider-content-2 h1 {
+  font-size: 60px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.slider-menu li {
+  margin: 0 12px;
+}
+.slider-menu li a {
+  font-size: 16px;
+}
 .header-area .navbar-brand {
   padding: 10px 0;
 }
@@ -109,6 +133,22 @@
 }
 .col-md-4.col-sm-6:nth-child(n+3) .single-service {
     margin-top: 30px;
+}
+.about-content {
+  margin-top: 30px;
+}
+.about-content h3 {
+  font-size: 24px;
+}
+.follow-menu {
+  margin-bottom: 15px;
+}
+.follow-title {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.follow-menu li a {
+  font-size: 14px;
 }
 .single-portfolio-item {
   width: 50%;
@@ -167,10 +207,7 @@
 .portfolio-4-column .single-portfolio-item {
   width: 50%;
 }
-.slider-content h1 {
-  font-size: 30px;
-  line-height: 40px;
-}
+
 
 }
 
@@ -199,7 +236,7 @@
   width: 100%;
 }
 .theme-section {
-  padding: 90px 0;
+  padding: 70px 0;
 }
 .navbar-right {
   float: none;
@@ -220,7 +257,14 @@
 }
 .slider-content h1 {
   font-size: 30px;
-  line-height: 40px;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.slider-menu li {
+  margin: 0 8px;
+}
+.slider-menu li a {
+  font-size: 14px;
 }
 .scroll-btn {
   bottom: 30px
@@ -301,6 +345,28 @@
 }
 .service-section {
   padding: 80px 0 50px;
+}
+.about-icon {
+  font-size: 36px;
+}
+.about-content {
+  margin-top: 20px;
+}
+.about-content h3 {
+  font-size: 20px;
+}
+.follow-title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.follow-menu {
+  margin-bottom: 15px;
+}
+.follow-menu li {
+  margin-right: 15px;
+}
+.follow-menu li a {
+  font-size: 14px;
 }
 .single-counter {
   width: 100%;
